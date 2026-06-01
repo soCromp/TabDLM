@@ -1,0 +1,1001 @@
+x1,x2,operation_x1,operation_x2,operation_between,latex_expression
+4.5,4.7,tan,cos,add,\tan(4.5) + \cos(4.7)
+4.1,4.6,log,sqrt,mul,\log(4.1) \times \sqrt{4.6}
+5.6,6.8,none,tan,mul,5.6 \times \tan(6.8)
+3.1,7.2,cube,none,mul,(3.1)^3 \times 7.2
+4.2,7.3,square,none,mul,(4.2)^2 \times 7.3
+5.9,8.0,log,cube,add,\log(5.9) + (8.0)^3
+5.1,7.1,tan,tan,mul,\tan(5.1) \times \tan(7.1)
+2.9,9.8,sin,square,mul,\sin(2.9) \times (9.8)^2
+0.5,6.8,sqrt,exp,add,\sqrt{0.5} + \exp(6.8)
+3.6,7.2,tan,none,div,\frac{\tan(3.6)}{7.2}
+3.3,3.3,cube,cube,sub,(3.3)^3 - (3.3)^3
+5.9,6.3,sin,none,add,\sin(5.9) + 6.3
+2.9,9.9,cos,none,mul,\cos(2.9) \times 9.9
+5.5,5.0,log,log,sub,\log(5.5) - \log(5.0)
+3.4,6.9,sqrt,sqrt,mul,\sqrt{3.4} \times \sqrt{6.9}
+4.6,8.0,none,none,div,\frac{4.6}{8.0}
+2.4,6.8,none,cube,add,2.4 + (6.8)^3
+1.3,5.9,exp,square,div,\frac{\exp(1.3)}{(5.9)^2}
+2.6,7.0,sqrt,log,mul,\sqrt{2.6} \times \log(7.0)
+2.1,6.5,cube,none,add,(2.1)^3 + 6.5
+4.7,5.8,exp,square,add,\exp(4.7) + (5.8)^2
+2.9,5.5,cube,sqrt,mul,(2.9)^3 \times \sqrt{5.5}
+1.8,7.4,log,none,add,\log(1.8) + 7.4
+5.6,4.4,sqrt,tan,mul,\sqrt{5.6} \times \tan(4.4)
+3.4,5.5,tan,none,add,\tan(3.4) + 5.5
+0.8,4.4,exp,sin,sub,\exp(0.8) - \sin(4.4)
+0.6,4.1,none,cos,add,0.6 + \cos(4.1)
+4.9,8.4,square,none,add,(4.9)^2 + 8.4
+4.8,6.2,cube,sin,add,(4.8)^3 + \sin(6.2)
+3.8,9.6,tan,tan,add,\tan(3.8) + \tan(9.6)
+1.2,6.7,tan,none,sub,\tan(1.2) - 6.7
+2.0,5.1,sqrt,log,sub,\sqrt{2.0} - \log(5.1)
+2.9,3.5,none,sqrt,div,\frac{2.9}{\sqrt{3.5}}
+0.1,4.9,none,cube,sub,0.1 - (4.9)^3
+0.7,9.6,sqrt,cos,mul,\sqrt{0.7} \times \cos(9.6)
+3.0,4.1,sin,none,mul,\sin(3.0) \times 4.1
+5.0,7.0,exp,none,sub,\exp(5.0) - 7.0
+3.3,5.5,cos,none,div,\frac{\cos(3.3)}{5.5}
+1.6,7.9,none,log,add,1.6 + \log(7.9)
+2.4,7.8,sqrt,cos,mul,\sqrt{2.4} \times \cos(7.8)
+5.3,3.3,log,exp,mul,\log(5.3) \times \exp(3.3)
+5.3,8.1,log,sin,add,\log(5.3) + \sin(8.1)
+0.3,5.4,tan,none,add,\tan(0.3) + 5.4
+0.8,9.7,sqrt,square,mul,\sqrt{0.8} \times (9.7)^2
+1.3,7.5,tan,sin,div,\frac{\tan(1.3)}{\sin(7.5)}
+0.4,7.7,none,cos,div,\frac{0.4}{\cos(7.7)}
+4.9,7.4,none,sin,div,\frac{4.9}{\sin(7.4)}
+3.3,4.5,log,cube,add,\log(3.3) + (4.5)^3
+3.8,7.4,square,tan,div,\frac{(3.8)^2}{\tan(7.4)}
+2.0,5.6,none,cos,add,2.0 + \cos(5.6)
+0.7,3.8,log,log,mul,\log(0.7) \times \log(3.8)
+4.4,9.3,sqrt,cos,add,\sqrt{4.4} + \cos(9.3)
+1.5,9.7,square,exp,mul,(1.5)^2 \times \exp(9.7)
+1.7,9.0,square,sqrt,mul,(1.7)^2 \times \sqrt{9.0}
+3.1,4.2,square,cube,sub,(3.1)^2 - (4.2)^3
+2.7,5.7,sqrt,none,add,\sqrt{2.7} + 5.7
+2.9,7.2,tan,sqrt,mul,\tan(2.9) \times \sqrt{7.2}
+2.7,4.9,none,none,add,2.7 + 4.9
+5.1,6.2,log,none,add,\log(5.1) + 6.2
+4.5,5.6,log,cube,mul,\log(4.5) \times (5.6)^3
+3.1,5.3,none,cos,mul,3.1 \times \cos(5.3)
+5.1,8.3,none,sqrt,div,\frac{5.1}{\sqrt{8.3}}
+3.8,8.0,log,cube,div,\frac{\log(3.8)}{(8.0)^3}
+3.3,4.7,log,none,mul,\log(3.3) \times 4.7
+3.1,5.1,log,sin,add,\log(3.1) + \sin(5.1)
+3.4,8.7,cos,log,add,\cos(3.4) + \log(8.7)
+4.5,8.3,none,sqrt,add,4.5 + \sqrt{8.3}
+2.2,8.7,sin,none,sub,\sin(2.2) - 8.7
+4.3,5.6,cube,square,add,(4.3)^3 + (5.6)^2
+6.0,9.0,cos,cos,add,\cos(6.0) + \cos(9.0)
+3.0,7.9,tan,log,add,\tan(3.0) + \log(7.9)
+5.4,8.9,square,log,add,(5.4)^2 + \log(8.9)
+5.3,9.9,none,tan,add,5.3 + \tan(9.9)
+1.4,4.2,log,square,add,\log(1.4) + (4.2)^2
+3.1,6.2,none,cos,add,3.1 + \cos(6.2)
+3.2,8.6,sqrt,cube,div,\frac{\sqrt{3.2}}{(8.6)^3}
+4.6,4.1,log,sqrt,div,\frac{\log(4.6)}{\sqrt{4.1}}
+5.2,4.0,sqrt,sqrt,div,\frac{\sqrt{5.2}}{\sqrt{4.0}}
+6.0,8.1,log,cube,mul,\log(6.0) \times (8.1)^3
+1.8,7.2,cos,none,div,\frac{\cos(1.8)}{7.2}
+5.7,4.9,log,cos,add,\log(5.7) + \cos(4.9)
+0.6,6.4,sqrt,log,add,\sqrt{0.6} + \log(6.4)
+0.8,5.3,sin,exp,div,\frac{\sin(0.8)}{\exp(5.3)}
+3.3,5.4,none,sqrt,add,3.3 + \sqrt{5.4}
+3.9,9.5,exp,none,sub,\exp(3.9) - 9.5
+3.5,9.7,log,sqrt,div,\frac{\log(3.5)}{\sqrt{9.7}}
+0.1,6.1,cube,sin,mul,(0.1)^3 \times \sin(6.1)
+6.0,5.7,none,sin,sub,6.0 - \sin(5.7)
+4.6,9.3,log,none,mul,\log(4.6) \times 9.3
+2.7,6.2,tan,sqrt,sub,\tan(2.7) - \sqrt{6.2}
+2.1,4.0,log,log,mul,\log(2.1) \times \log(4.0)
+2.9,4.3,cube,exp,mul,(2.9)^3 \times \exp(4.3)
+4.2,5.9,exp,exp,sub,\exp(4.2) - \exp(5.9)
+1.3,9.2,square,sqrt,add,(1.3)^2 + \sqrt{9.2}
+1.4,8.4,cos,tan,add,\cos(1.4) + \tan(8.4)
+1.0,5.6,tan,square,div,\frac{\tan(1.0)}{(5.6)^2}
+4.5,7.2,none,none,sub,4.5 - 7.2
+4.8,5.4,square,sqrt,div,\frac{(4.8)^2}{\sqrt{5.4}}
+5.6,4.4,none,none,sub,5.6 - 4.4
+1.1,7.4,none,sin,mul,1.1 \times \sin(7.4)
+3.2,8.0,sqrt,cos,mul,\sqrt{3.2} \times \cos(8.0)
+5.5,4.2,cos,tan,mul,\cos(5.5) \times \tan(4.2)
+5.8,7.7,none,square,mul,5.8 \times (7.7)^2
+5.6,6.2,cube,tan,mul,(5.6)^3 \times \tan(6.2)
+2.2,4.1,sin,none,mul,\sin(2.2) \times 4.1
+4.5,6.2,none,cos,add,4.5 + \cos(6.2)
+5.5,9.4,log,cos,mul,\log(5.5) \times \cos(9.4)
+4.3,8.9,tan,cube,add,\tan(4.3) + (8.9)^3
+3.8,9.3,none,sin,mul,3.8 \times \sin(9.3)
+3.5,8.5,square,none,mul,(3.5)^2 \times 8.5
+4.4,5.0,exp,exp,div,\frac{\exp(4.4)}{\exp(5.0)}
+2.7,3.8,square,cos,mul,(2.7)^2 \times \cos(3.8)
+2.4,4.9,sqrt,cube,sub,\sqrt{2.4} - (4.9)^3
+4.0,4.1,sqrt,sin,mul,\sqrt{4.0} \times \sin(4.1)
+3.8,3.0,log,none,mul,\log(3.8) \times 3.0
+2.5,7.5,sin,exp,div,\frac{\sin(2.5)}{\exp(7.5)}
+5.0,6.2,square,log,mul,(5.0)^2 \times \log(6.2)
+5.0,3.2,square,cube,mul,(5.0)^2 \times (3.2)^3
+5.0,3.1,cos,tan,add,\cos(5.0) + \tan(3.1)
+0.1,8.3,sqrt,sin,add,\sqrt{0.1} + \sin(8.3)
+2.4,4.2,log,sqrt,div,\frac{\log(2.4)}{\sqrt{4.2}}
+4.3,7.2,none,none,mul,4.3 \times 7.2
+1.5,3.2,sin,square,add,\sin(1.5) + (3.2)^2
+2.9,4.0,exp,sin,mul,\exp(2.9) \times \sin(4.0)
+3.9,9.5,none,none,sub,3.9 - 9.5
+3.4,6.9,log,sin,mul,\log(3.4) \times \sin(6.9)
+4.3,9.0,none,none,div,\frac{4.3}{9.0}
+4.6,8.5,cos,sqrt,add,\cos(4.6) + \sqrt{8.5}
+0.9,8.7,sqrt,log,mul,\sqrt{0.9} \times \log(8.7)
+2.3,6.7,sqrt,log,div,\frac{\sqrt{2.3}}{\log(6.7)}
+0.9,3.9,cos,tan,add,\cos(0.9) + \tan(3.9)
+4.1,5.0,log,none,mul,\log(4.1) \times 5.0
+4.0,9.2,cos,none,mul,\cos(4.0) \times 9.2
+2.7,5.6,sin,sqrt,add,\sin(2.7) + \sqrt{5.6}
+4.7,5.5,square,log,sub,(4.7)^2 - \log(5.5)
+3.3,7.1,sqrt,log,sub,\sqrt{3.3} - \log(7.1)
+3.1,9.6,square,cos,add,(3.1)^2 + \cos(9.6)
+5.3,8.9,sin,sin,mul,\sin(5.3) \times \sin(8.9)
+3.1,5.8,none,log,mul,3.1 \times \log(5.8)
+2.8,8.6,none,none,add,2.8 + 8.6
+0.6,6.8,sin,none,add,\sin(0.6) + 6.8
+4.5,4.6,square,sqrt,mul,(4.5)^2 \times \sqrt{4.6}
+3.4,5.8,log,sqrt,div,\frac{\log(3.4)}{\sqrt{5.8}}
+2.0,5.5,sqrt,log,mul,\sqrt{2.0} \times \log(5.5)
+3.5,6.9,sin,cos,add,\sin(3.5) + \cos(6.9)
+1.8,7.2,exp,cos,sub,\exp(1.8) - \cos(7.2)
+2.2,5.6,none,none,add,2.2 + 5.6
+0.7,8.0,sin,cos,sub,\sin(0.7) - \cos(8.0)
+3.0,5.1,log,none,div,\frac{\log(3.0)}{5.1}
+4.1,8.0,log,tan,add,\log(4.1) + \tan(8.0)
+6.0,6.9,exp,none,sub,\exp(6.0) - 6.9
+4.9,6.9,log,log,mul,\log(4.9) \times \log(6.9)
+3.8,6.6,tan,square,add,\tan(3.8) + (6.6)^2
+1.9,7.4,sin,none,sub,\sin(1.9) - 7.4
+4.2,6.5,square,sin,sub,(4.2)^2 - \sin(6.5)
+2.8,9.7,sqrt,tan,div,\frac{\sqrt{2.8}}{\tan(9.7)}
+4.1,6.5,log,sqrt,add,\log(4.1) + \sqrt{6.5}
+1.9,5.6,sqrt,tan,div,\frac{\sqrt{1.9}}{\tan(5.6)}
+0.3,4.0,exp,cube,mul,\exp(0.3) \times (4.0)^3
+3.7,8.8,sin,sin,add,\sin(3.7) + \sin(8.8)
+1.6,5.7,cube,cos,mul,(1.6)^3 \times \cos(5.7)
+3.8,5.9,exp,cos,mul,\exp(3.8) \times \cos(5.9)
+1.9,8.6,none,cos,add,1.9 + \cos(8.6)
+1.3,7.4,cos,exp,mul,\cos(1.3) \times \exp(7.4)
+5.9,3.2,log,sin,mul,\log(5.9) \times \sin(3.2)
+4.1,7.8,log,exp,add,\log(4.1) + \exp(7.8)
+2.5,9.9,sqrt,sqrt,add,\sqrt{2.5} + \sqrt{9.9}
+3.4,7.8,sqrt,cos,mul,\sqrt{3.4} \times \cos(7.8)
+2.5,5.6,exp,log,sub,\exp(2.5) - \log(5.6)
+1.9,6.0,sin,none,sub,\sin(1.9) - 6.0
+3.8,4.8,sqrt,sin,mul,\sqrt{3.8} \times \sin(4.8)
+2.9,7.0,none,cos,add,2.9 + \cos(7.0)
+3.6,7.4,none,none,mul,3.6 \times 7.4
+3.1,9.0,sin,cos,add,\sin(3.1) + \cos(9.0)
+3.8,6.8,none,log,mul,3.8 \times \log(6.8)
+1.4,4.8,none,cube,div,\frac{1.4}{(4.8)^3}
+1.1,9.1,cos,cos,add,\cos(1.1) + \cos(9.1)
+2.8,3.0,tan,cube,add,\tan(2.8) + (3.0)^3
+4.0,4.0,square,sqrt,add,(4.0)^2 + \sqrt{4.0}
+2.3,3.9,sqrt,none,mul,\sqrt{2.3} \times 3.9
+2.3,7.1,log,sqrt,sub,\log(2.3) - \sqrt{7.1}
+2.2,8.4,sqrt,sin,sub,\sqrt{2.2} - \sin(8.4)
+3.6,6.2,log,cos,div,\frac{\log(3.6)}{\cos(6.2)}
+2.1,6.8,tan,square,div,\frac{\tan(2.1)}{(6.8)^2}
+4.4,6.2,none,none,sub,4.4 - 6.2
+0.4,4.4,cos,exp,div,\frac{\cos(0.4)}{\exp(4.4)}
+0.1,6.4,log,log,mul,\log(0.1) \times \log(6.4)
+2.4,3.0,square,sqrt,add,(2.4)^2 + \sqrt{3.0}
+5.0,6.7,sin,none,div,\frac{\sin(5.0)}{6.7}
+0.3,7.1,sqrt,sqrt,add,\sqrt{0.3} + \sqrt{7.1}
+3.5,5.3,square,square,add,(3.5)^2 + (5.3)^2
+3.3,4.4,square,cube,sub,(3.3)^2 - (4.4)^3
+2.2,3.1,sin,cos,sub,\sin(2.2) - \cos(3.1)
+0.9,8.5,cos,cos,mul,\cos(0.9) \times \cos(8.5)
+5.2,8.4,exp,tan,mul,\exp(5.2) \times \tan(8.4)
+2.7,3.8,square,square,add,(2.7)^2 + (3.8)^2
+0.1,9.6,sqrt,exp,mul,\sqrt{0.1} \times \exp(9.6)
+2.8,5.3,square,exp,add,(2.8)^2 + \exp(5.3)
+0.5,5.3,sin,cube,mul,\sin(0.5) \times (5.3)^3
+3.7,5.4,square,tan,mul,(3.7)^2 \times \tan(5.4)
+2.7,9.9,cube,sqrt,add,(2.7)^3 + \sqrt{9.9}
+3.8,6.1,sqrt,sin,sub,\sqrt{3.8} - \sin(6.1)
+3.5,7.1,square,none,sub,(3.5)^2 - 7.1
+5.6,9.8,log,cos,sub,\log(5.6) - \cos(9.8)
+0.4,4.6,sqrt,square,sub,\sqrt{0.4} - (4.6)^2
+2.5,6.3,log,square,sub,\log(2.5) - (6.3)^2
+1.5,6.6,square,sin,mul,(1.5)^2 \times \sin(6.6)
+3.3,7.1,sqrt,none,sub,\sqrt{3.3} - 7.1
+3.2,5.5,none,log,div,\frac{3.2}{\log(5.5)}
+2.8,7.7,log,sin,add,\log(2.8) + \sin(7.7)
+1.2,6.2,cube,cos,div,\frac{(1.2)^3}{\cos(6.2)}
+4.1,4.9,cos,tan,mul,\cos(4.1) \times \tan(4.9)
+0.7,5.4,sqrt,none,sub,\sqrt{0.7} - 5.4
+2.5,6.9,sin,cos,add,\sin(2.5) + \cos(6.9)
+3.7,7.3,sqrt,cos,add,\sqrt{3.7} + \cos(7.3)
+2.9,9.1,square,exp,mul,(2.9)^2 \times \exp(9.1)
+4.1,8.8,exp,none,sub,\exp(4.1) - 8.8
+1.3,7.6,square,square,add,(1.3)^2 + (7.6)^2
+5.4,6.9,sqrt,sqrt,add,\sqrt{5.4} + \sqrt{6.9}
+5.3,8.5,sin,sqrt,div,\frac{\sin(5.3)}{\sqrt{8.5}}
+3.5,4.9,cos,log,div,\frac{\cos(3.5)}{\log(4.9)}
+0.3,7.2,none,square,sub,0.3 - (7.2)^2
+3.0,5.0,log,log,add,\log(3.0) + \log(5.0)
+0.3,3.8,log,tan,add,\log(0.3) + \tan(3.8)
+1.2,7.5,sqrt,cos,mul,\sqrt{1.2} \times \cos(7.5)
+2.3,9.5,sqrt,sqrt,add,\sqrt{2.3} + \sqrt{9.5}
+4.8,7.5,square,none,add,(4.8)^2 + 7.5
+0.5,4.5,sqrt,cos,sub,\sqrt{0.5} - \cos(4.5)
+0.8,6.3,square,tan,sub,(0.8)^2 - \tan(6.3)
+0.5,8.8,square,none,mul,(0.5)^2 \times 8.8
+4.1,3.3,square,none,add,(4.1)^2 + 3.3
+1.5,6.2,sin,exp,sub,\sin(1.5) - \exp(6.2)
+1.3,7.9,sqrt,none,add,\sqrt{1.3} + 7.9
+1.3,6.8,square,log,mul,(1.3)^2 \times \log(6.8)
+2.1,7.9,sqrt,sin,add,\sqrt{2.1} + \sin(7.9)
+1.5,5.4,none,none,add,1.5 + 5.4
+0.8,6.1,none,cube,add,0.8 + (6.1)^3
+1.2,7.0,sqrt,sqrt,add,\sqrt{1.2} + \sqrt{7.0}
+1.2,6.8,tan,tan,add,\tan(1.2) + \tan(6.8)
+1.0,5.6,sin,none,mul,\sin(1.0) \times 5.6
+4.4,5.5,sin,none,mul,\sin(4.4) \times 5.5
+2.6,5.5,none,sin,mul,2.6 \times \sin(5.5)
+4.0,6.9,square,sin,div,\frac{(4.0)^2}{\sin(6.9)}
+5.6,5.3,square,none,add,(5.6)^2 + 5.3
+2.8,8.2,exp,exp,mul,\exp(2.8) \times \exp(8.2)
+3.0,3.4,square,none,mul,(3.0)^2 \times 3.4
+2.3,4.0,tan,cos,mul,\tan(2.3) \times \cos(4.0)
+6.0,7.7,log,cos,add,\log(6.0) + \cos(7.7)
+1.9,5.4,none,sqrt,sub,1.9 - \sqrt{5.4}
+3.8,7.2,cube,cos,div,\frac{(3.8)^3}{\cos(7.2)}
+2.4,5.8,log,sqrt,div,\frac{\log(2.4)}{\sqrt{5.8}}
+5.7,8.4,exp,sqrt,mul,\exp(5.7) \times \sqrt{8.4}
+0.3,5.1,sin,sqrt,add,\sin(0.3) + \sqrt{5.1}
+1.0,5.1,cos,sqrt,div,\frac{\cos(1.0)}{\sqrt{5.1}}
+4.1,7.6,none,log,add,4.1 + \log(7.6)
+3.4,8.1,sqrt,square,div,\frac{\sqrt{3.4}}{(8.1)^2}
+1.0,4.0,log,none,sub,\log(1.0) - 4.0
+3.3,5.8,cos,none,sub,\cos(3.3) - 5.8
+3.1,7.2,sqrt,cos,div,\frac{\sqrt{3.1}}{\cos(7.2)}
+4.7,8.8,none,none,add,4.7 + 8.8
+1.5,5.5,log,none,mul,\log(1.5) \times 5.5
+4.6,5.5,sqrt,cube,sub,\sqrt{4.6} - (5.5)^3
+2.1,6.6,sqrt,tan,add,\sqrt{2.1} + \tan(6.6)
+5.9,6.5,sin,sin,add,\sin(5.9) + \sin(6.5)
+2.6,9.8,tan,tan,sub,\tan(2.6) - \tan(9.8)
+1.6,4.2,cos,cos,add,\cos(1.6) + \cos(4.2)
+1.1,5.9,log,none,add,\log(1.1) + 5.9
+4.6,7.2,exp,exp,add,\exp(4.6) + \exp(7.2)
+5.5,3.3,cos,cos,sub,\cos(5.5) - \cos(3.3)
+5.2,8.6,tan,sqrt,add,\tan(5.2) + \sqrt{8.6}
+4.9,6.7,cos,sqrt,mul,\cos(4.9) \times \sqrt{6.7}
+2.2,5.6,tan,none,add,\tan(2.2) + 5.6
+3.0,5.2,exp,cube,add,\exp(3.0) + (5.2)^3
+2.9,6.2,none,none,add,2.9 + 6.2
+0.1,5.9,cos,tan,add,\cos(0.1) + \tan(5.9)
+0.5,8.2,tan,tan,sub,\tan(0.5) - \tan(8.2)
+0.3,6.9,none,none,sub,0.3 - 6.9
+2.0,5.8,square,square,add,(2.0)^2 + (5.8)^2
+3.0,4.7,log,sqrt,mul,\log(3.0) \times \sqrt{4.7}
+0.9,3.7,sqrt,sqrt,div,\frac{\sqrt{0.9}}{\sqrt{3.7}}
+3.7,9.5,exp,tan,mul,\exp(3.7) \times \tan(9.5)
+2.2,5.5,cube,cube,add,(2.2)^3 + (5.5)^3
+2.7,6.2,square,exp,add,(2.7)^2 + \exp(6.2)
+1.5,5.0,sin,cos,mul,\sin(1.5) \times \cos(5.0)
+5.7,7.0,square,cube,div,\frac{(5.7)^2}{(7.0)^3}
+1.7,5.7,sqrt,exp,mul,\sqrt{1.7} \times \exp(5.7)
+2.5,5.1,exp,cos,div,\frac{\exp(2.5)}{\cos(5.1)}
+0.6,7.8,sqrt,sin,add,\sqrt{0.6} + \sin(7.8)
+1.8,9.6,log,sin,div,\frac{\log(1.8)}{\sin(9.6)}
+5.7,7.4,sin,cube,sub,\sin(5.7) - (7.4)^3
+6.0,7.7,sqrt,square,add,\sqrt{6.0} + (7.7)^2
+2.2,9.2,log,none,sub,\log(2.2) - 9.2
+4.7,6.0,exp,square,sub,\exp(4.7) - (6.0)^2
+5.4,5.3,cube,sin,mul,(5.4)^3 \times \sin(5.3)
+0.6,6.0,square,none,sub,(0.6)^2 - 6.0
+1.8,7.5,none,sqrt,add,1.8 + \sqrt{7.5}
+4.5,9.5,cube,none,mul,(4.5)^3 \times 9.5
+2.0,6.4,square,cos,sub,(2.0)^2 - \cos(6.4)
+1.2,8.3,log,square,mul,\log(1.2) \times (8.3)^2
+1.9,6.0,cos,none,div,\frac{\cos(1.9)}{6.0}
+1.9,3.3,log,none,sub,\log(1.9) - 3.3
+3.6,4.4,cos,log,sub,\cos(3.6) - \log(4.4)
+4.4,9.2,sin,square,add,\sin(4.4) + (9.2)^2
+4.9,6.6,none,square,mul,4.9 \times (6.6)^2
+4.2,6.7,sqrt,square,add,\sqrt{4.2} + (6.7)^2
+4.3,8.7,sqrt,sqrt,mul,\sqrt{4.3} \times \sqrt{8.7}
+0.2,8.8,cos,none,sub,\cos(0.2) - 8.8
+2.1,8.1,sin,sqrt,add,\sin(2.1) + \sqrt{8.1}
+1.1,9.3,cos,log,div,\frac{\cos(1.1)}{\log(9.3)}
+1.8,7.3,none,exp,mul,1.8 \times \exp(7.3)
+3.5,7.6,sqrt,cos,mul,\sqrt{3.5} \times \cos(7.6)
+1.2,9.1,square,none,div,\frac{(1.2)^2}{9.1}
+1.3,7.2,log,sin,div,\frac{\log(1.3)}{\sin(7.2)}
+0.5,6.4,tan,tan,add,\tan(0.5) + \tan(6.4)
+1.7,3.5,sqrt,cube,add,\sqrt{1.7} + (3.5)^3
+2.4,4.8,none,none,sub,2.4 - 4.8
+5.3,7.2,log,square,mul,\log(5.3) \times (7.2)^2
+3.8,5.3,sqrt,tan,sub,\sqrt{3.8} - \tan(5.3)
+0.9,5.6,sin,square,add,\sin(0.9) + (5.6)^2
+4.8,5.5,log,sqrt,mul,\log(4.8) \times \sqrt{5.5}
+1.8,9.0,square,sin,div,\frac{(1.8)^2}{\sin(9.0)}
+4.1,8.0,tan,sin,div,\frac{\tan(4.1)}{\sin(8.0)}
+3.6,5.3,exp,sin,mul,\exp(3.6) \times \sin(5.3)
+1.1,9.3,square,sin,sub,(1.1)^2 - \sin(9.3)
+1.7,3.7,cube,square,add,(1.7)^3 + (3.7)^2
+4.5,3.0,exp,cos,sub,\exp(4.5) - \cos(3.0)
+2.4,7.6,square,none,mul,(2.4)^2 \times 7.6
+4.0,8.3,square,none,add,(4.0)^2 + 8.3
+3.8,5.4,exp,sqrt,sub,\exp(3.8) - \sqrt{5.4}
+4.1,3.3,sqrt,tan,add,\sqrt{4.1} + \tan(3.3)
+3.8,5.2,none,log,mul,3.8 \times \log(5.2)
+5.0,8.4,square,square,div,\frac{(5.0)^2}{(8.4)^2}
+2.1,6.2,exp,cos,mul,\exp(2.1) \times \cos(6.2)
+1.9,5.7,sqrt,cos,mul,\sqrt{1.9} \times \cos(5.7)
+5.3,4.6,sqrt,cos,mul,\sqrt{5.3} \times \cos(4.6)
+2.1,4.5,tan,square,mul,\tan(2.1) \times (4.5)^2
+1.6,5.9,sqrt,cube,sub,\sqrt{1.6} - (5.9)^3
+3.8,4.0,exp,none,sub,\exp(3.8) - 4.0
+3.8,6.5,sin,sqrt,add,\sin(3.8) + \sqrt{6.5}
+4.2,7.6,log,none,add,\log(4.2) + 7.6
+4.5,8.5,sin,none,add,\sin(4.5) + 8.5
+1.3,5.8,cos,sqrt,mul,\cos(1.3) \times \sqrt{5.8}
+5.3,8.4,square,cube,mul,(5.3)^2 \times (8.4)^3
+1.2,7.9,log,log,add,\log(1.2) + \log(7.9)
+2.9,6.4,none,exp,div,\frac{2.9}{\exp(6.4)}
+2.7,6.4,cube,exp,mul,(2.7)^3 \times \exp(6.4)
+4.6,8.1,log,cos,add,\log(4.6) + \cos(8.1)
+2.7,6.6,square,tan,add,(2.7)^2 + \tan(6.6)
+1.3,3.0,sqrt,none,add,\sqrt{1.3} + 3.0
+4.9,5.0,tan,exp,mul,\tan(4.9) \times \exp(5.0)
+1.0,7.5,log,cos,mul,\log(1.0) \times \cos(7.5)
+2.0,8.8,cube,cube,div,\frac{(2.0)^3}{(8.8)^3}
+2.9,3.1,cube,sqrt,sub,(2.9)^3 - \sqrt{3.1}
+2.5,4.3,sqrt,cos,sub,\sqrt{2.5} - \cos(4.3)
+5.5,5.6,sin,sqrt,mul,\sin(5.5) \times \sqrt{5.6}
+3.8,8.1,sqrt,log,add,\sqrt{3.8} + \log(8.1)
+2.0,9.0,sin,sqrt,sub,\sin(2.0) - \sqrt{9.0}
+5.1,5.6,sin,log,div,\frac{\sin(5.1)}{\log(5.6)}
+3.7,4.9,exp,none,div,\frac{\exp(3.7)}{4.9}
+1.6,5.2,tan,cube,mul,\tan(1.6) \times (5.2)^3
+1.0,3.9,none,cube,mul,1.0 \times (3.9)^3
+1.9,7.1,sin,log,div,\frac{\sin(1.9)}{\log(7.1)}
+3.3,3.1,log,square,mul,\log(3.3) \times (3.1)^2
+3.2,6.1,cube,none,mul,(3.2)^3 \times 6.1
+1.3,7.5,tan,log,add,\tan(1.3) + \log(7.5)
+1.1,5.5,none,square,mul,1.1 \times (5.5)^2
+5.1,7.6,none,sin,mul,5.1 \times \sin(7.6)
+4.6,5.4,exp,cube,add,\exp(4.6) + (5.4)^3
+4.3,8.5,log,none,add,\log(4.3) + 8.5
+2.8,7.2,none,sin,mul,2.8 \times \sin(7.2)
+2.6,5.5,log,cube,mul,\log(2.6) \times (5.5)^3
+3.4,7.9,none,square,mul,3.4 \times (7.9)^2
+3.3,7.4,sin,none,mul,\sin(3.3) \times 7.4
+4.4,7.6,cube,cos,mul,(4.4)^3 \times \cos(7.6)
+4.7,8.5,sqrt,sin,sub,\sqrt{4.7} - \sin(8.5)
+4.0,7.5,tan,tan,mul,\tan(4.0) \times \tan(7.5)
+0.1,6.6,none,tan,add,0.1 + \tan(6.6)
+3.0,4.6,log,none,add,\log(3.0) + 4.6
+2.5,8.9,cos,sqrt,add,\cos(2.5) + \sqrt{8.9}
+1.0,5.3,log,sqrt,sub,\log(1.0) - \sqrt{5.3}
+3.4,3.6,none,sin,add,3.4 + \sin(3.6)
+5.4,6.1,sin,sqrt,mul,\sin(5.4) \times \sqrt{6.1}
+5.3,7.6,log,none,mul,\log(5.3) \times 7.6
+2.1,5.4,square,cos,add,(2.1)^2 + \cos(5.4)
+3.9,3.8,sqrt,square,add,\sqrt{3.9} + (3.8)^2
+3.5,5.7,sin,none,add,\sin(3.5) + 5.7
+3.4,6.4,square,none,mul,(3.4)^2 \times 6.4
+0.6,8.1,log,cube,mul,\log(0.6) \times (8.1)^3
+2.0,7.1,cube,cos,mul,(2.0)^3 \times \cos(7.1)
+1.6,7.0,square,none,div,\frac{(1.6)^2}{7.0}
+3.9,9.0,sin,square,add,\sin(3.9) + (9.0)^2
+1.3,4.0,cos,sin,sub,\cos(1.3) - \sin(4.0)
+4.7,6.4,sqrt,none,add,\sqrt{4.7} + 6.4
+5.7,6.8,sqrt,square,add,\sqrt{5.7} + (6.8)^2
+0.5,6.7,sqrt,sqrt,div,\frac{\sqrt{0.5}}{\sqrt{6.7}}
+5.9,5.3,log,sqrt,sub,\log(5.9) - \sqrt{5.3}
+3.5,3.9,sqrt,sin,add,\sqrt{3.5} + \sin(3.9)
+4.0,4.3,none,exp,div,\frac{4.0}{\exp(4.3)}
+1.7,8.1,cube,log,sub,(1.7)^3 - \log(8.1)
+2.4,6.4,cos,sin,mul,\cos(2.4) \times \sin(6.4)
+4.1,7.4,sin,sin,sub,\sin(4.1) - \sin(7.4)
+5.2,6.0,sqrt,sin,add,\sqrt{5.2} + \sin(6.0)
+4.3,6.4,log,cos,sub,\log(4.3) - \cos(6.4)
+3.8,7.3,cube,cube,add,(3.8)^3 + (7.3)^3
+2.3,5.5,exp,cube,add,\exp(2.3) + (5.5)^3
+1.3,9.5,none,cos,mul,1.3 \times \cos(9.5)
+2.5,4.4,cube,cube,add,(2.5)^3 + (4.4)^3
+0.8,5.8,log,sin,add,\log(0.8) + \sin(5.8)
+1.8,8.2,none,square,mul,1.8 \times (8.2)^2
+2.7,6.3,log,none,sub,\log(2.7) - 6.3
+0.4,5.5,exp,log,sub,\exp(0.4) - \log(5.5)
+3.0,7.2,cos,none,div,\frac{\cos(3.0)}{7.2}
+4.8,3.5,cos,sin,sub,\cos(4.8) - \sin(3.5)
+3.8,7.5,cube,log,div,\frac{(3.8)^3}{\log(7.5)}
+2.1,6.0,sqrt,square,add,\sqrt{2.1} + (6.0)^2
+3.9,6.6,tan,sqrt,mul,\tan(3.9) \times \sqrt{6.6}
+4.0,7.7,sin,log,add,\sin(4.0) + \log(7.7)
+5.1,8.9,exp,none,mul,\exp(5.1) \times 8.9
+2.9,6.3,none,sqrt,mul,2.9 \times \sqrt{6.3}
+4.9,9.1,tan,sin,add,\tan(4.9) + \sin(9.1)
+1.4,5.4,cube,tan,sub,(1.4)^3 - \tan(5.4)
+2.4,4.5,none,tan,mul,2.4 \times \tan(4.5)
+1.5,3.6,square,tan,mul,(1.5)^2 \times \tan(3.6)
+5.1,4.7,sin,cos,add,\sin(5.1) + \cos(4.7)
+0.5,4.2,tan,sin,add,\tan(0.5) + \sin(4.2)
+0.9,7.1,sqrt,cube,mul,\sqrt{0.9} \times (7.1)^3
+3.8,4.7,none,cos,mul,3.8 \times \cos(4.7)
+2.7,8.3,cos,sqrt,div,\frac{\cos(2.7)}{\sqrt{8.3}}
+4.0,4.3,cos,log,add,\cos(4.0) + \log(4.3)
+1.7,8.4,none,tan,div,\frac{1.7}{\tan(8.4)}
+1.6,4.5,sin,sin,div,\frac{\sin(1.6)}{\sin(4.5)}
+4.9,7.8,square,log,sub,(4.9)^2 - \log(7.8)
+4.8,6.9,none,sin,add,4.8 + \sin(6.9)
+2.6,4.7,cube,cos,div,\frac{(2.6)^3}{\cos(4.7)}
+6.0,5.7,square,sin,add,(6.0)^2 + \sin(5.7)
+4.4,5.8,none,log,mul,4.4 \times \log(5.8)
+5.5,9.3,square,sqrt,mul,(5.5)^2 \times \sqrt{9.3}
+4.8,5.1,log,none,mul,\log(4.8) \times 5.1
+1.1,5.2,log,cos,add,\log(1.1) + \cos(5.2)
+0.6,7.5,exp,sin,div,\frac{\exp(0.6)}{\sin(7.5)}
+2.3,8.8,log,cube,div,\frac{\log(2.3)}{(8.8)^3}
+6.0,5.6,square,none,sub,(6.0)^2 - 5.6
+1.7,4.3,square,none,add,(1.7)^2 + 4.3
+3.2,6.4,sqrt,none,sub,\sqrt{3.2} - 6.4
+2.7,6.0,sqrt,cos,add,\sqrt{2.7} + \cos(6.0)
+3.3,7.5,none,cube,sub,3.3 - (7.5)^3
+2.6,4.8,sin,sin,sub,\sin(2.6) - \sin(4.8)
+1.1,9.5,cube,sin,mul,(1.1)^3 \times \sin(9.5)
+1.3,5.9,tan,sqrt,add,\tan(1.3) + \sqrt{5.9}
+2.0,6.8,exp,none,add,\exp(2.0) + 6.8
+5.2,8.2,exp,sin,mul,\exp(5.2) \times \sin(8.2)
+2.4,3.6,exp,sin,add,\exp(2.4) + \sin(3.6)
+0.1,9.3,sqrt,none,add,\sqrt{0.1} + 9.3
+1.6,9.6,cube,cos,mul,(1.6)^3 \times \cos(9.6)
+2.0,8.0,tan,cos,sub,\tan(2.0) - \cos(8.0)
+0.6,7.4,exp,tan,mul,\exp(0.6) \times \tan(7.4)
+1.6,8.8,log,sqrt,mul,\log(1.6) \times \sqrt{8.8}
+3.9,8.2,none,sqrt,mul,3.9 \times \sqrt{8.2}
+3.7,8.4,cube,tan,div,\frac{(3.7)^3}{\tan(8.4)}
+4.4,7.1,square,tan,mul,(4.4)^2 \times \tan(7.1)
+5.1,4.1,cube,cube,mul,(5.1)^3 \times (4.1)^3
+5.9,9.1,cos,none,sub,\cos(5.9) - 9.1
+0.5,8.0,sin,cube,add,\sin(0.5) + (8.0)^3
+4.7,7.1,sqrt,sqrt,add,\sqrt{4.7} + \sqrt{7.1}
+0.3,8.3,exp,sqrt,div,\frac{\exp(0.3)}{\sqrt{8.3}}
+0.6,4.6,none,sqrt,add,0.6 + \sqrt{4.6}
+0.7,5.6,sqrt,cube,add,\sqrt{0.7} + (5.6)^3
+4.7,4.5,sqrt,none,add,\sqrt{4.7} + 4.5
+3.2,5.7,sin,tan,add,\sin(3.2) + \tan(5.7)
+0.4,8.2,square,log,mul,(0.4)^2 \times \log(8.2)
+3.9,8.6,sin,square,mul,\sin(3.9) \times (8.6)^2
+2.1,7.5,tan,sqrt,mul,\tan(2.1) \times \sqrt{7.5}
+1.8,5.5,log,cube,add,\log(1.8) + (5.5)^3
+2.6,8.7,exp,exp,sub,\exp(2.6) - \exp(8.7)
+3.5,3.2,cos,cube,div,\frac{\cos(3.5)}{(3.2)^3}
+4.3,3.8,cube,none,add,(4.3)^3 + 3.8
+0.2,6.2,none,none,div,\frac{0.2}{6.2}
+0.1,7.6,square,tan,sub,(0.1)^2 - \tan(7.6)
+1.2,7.0,cos,sin,sub,\cos(1.2) - \sin(7.0)
+3.8,6.6,log,none,add,\log(3.8) + 6.6
+4.1,8.4,none,none,sub,4.1 - 8.4
+3.1,9.4,log,sqrt,div,\frac{\log(3.1)}{\sqrt{9.4}}
+2.0,5.8,tan,cos,mul,\tan(2.0) \times \cos(5.8)
+1.3,6.1,sqrt,log,sub,\sqrt{1.3} - \log(6.1)
+3.5,4.2,cube,cos,sub,(3.5)^3 - \cos(4.2)
+3.6,7.5,log,cos,mul,\log(3.6) \times \cos(7.5)
+3.2,4.7,cube,none,div,\frac{(3.2)^3}{4.7}
+4.3,7.1,sin,sqrt,add,\sin(4.3) + \sqrt{7.1}
+3.4,9.8,tan,log,div,\frac{\tan(3.4)}{\log(9.8)}
+3.1,6.1,log,sin,mul,\log(3.1) \times \sin(6.1)
+3.3,6.8,square,square,div,\frac{(3.3)^2}{(6.8)^2}
+3.0,7.9,exp,sin,add,\exp(3.0) + \sin(7.9)
+3.9,7.0,exp,cube,mul,\exp(3.9) \times (7.0)^3
+1.9,5.5,square,tan,sub,(1.9)^2 - \tan(5.5)
+3.3,6.4,exp,sqrt,add,\exp(3.3) + \sqrt{6.4}
+2.7,7.9,none,sin,add,2.7 + \sin(7.9)
+4.1,3.2,square,exp,mul,(4.1)^2 \times \exp(3.2)
+1.3,7.6,cos,none,mul,\cos(1.3) \times 7.6
+1.2,3.6,square,sin,mul,(1.2)^2 \times \sin(3.6)
+0.2,8.7,none,none,add,0.2 + 8.7
+0.4,5.3,square,sin,div,\frac{(0.4)^2}{\sin(5.3)}
+3.5,5.4,exp,cos,sub,\exp(3.5) - \cos(5.4)
+2.5,4.1,exp,square,add,\exp(2.5) + (4.1)^2
+2.6,9.6,sqrt,sin,mul,\sqrt{2.6} \times \sin(9.6)
+3.0,9.9,log,square,add,\log(3.0) + (9.9)^2
+3.3,8.1,tan,sqrt,div,\frac{\tan(3.3)}{\sqrt{8.1}}
+1.3,7.3,tan,sin,add,\tan(1.3) + \sin(7.3)
+4.6,7.7,sqrt,sqrt,add,\sqrt{4.6} + \sqrt{7.7}
+2.2,3.5,tan,square,mul,\tan(2.2) \times (3.5)^2
+3.3,5.3,log,none,mul,\log(3.3) \times 5.3
+3.7,8.6,cos,cos,mul,\cos(3.7) \times \cos(8.6)
+3.3,5.8,sqrt,sin,mul,\sqrt{3.3} \times \sin(5.8)
+2.7,5.8,cos,square,div,\frac{\cos(2.7)}{(5.8)^2}
+2.6,4.2,none,cube,div,\frac{2.6}{(4.2)^3}
+2.0,3.3,none,none,div,\frac{2.0}{3.3}
+5.3,8.6,none,exp,sub,5.3 - \exp(8.6)
+1.0,5.8,log,none,sub,\log(1.0) - 5.8
+3.9,4.6,cos,cos,mul,\cos(3.9) \times \cos(4.6)
+3.8,8.8,log,log,div,\frac{\log(3.8)}{\log(8.8)}
+4.8,4.1,cos,none,sub,\cos(4.8) - 4.1
+1.7,5.7,none,none,mul,1.7 \times 5.7
+1.0,4.4,none,none,add,1.0 + 4.4
+2.9,8.2,cube,cos,div,\frac{(2.9)^3}{\cos(8.2)}
+5.3,3.7,log,sqrt,mul,\log(5.3) \times \sqrt{3.7}
+0.9,9.8,sqrt,cos,sub,\sqrt{0.9} - \cos(9.8)
+3.9,8.7,sqrt,square,div,\frac{\sqrt{3.9}}{(8.7)^2}
+2.5,8.5,log,cube,mul,\log(2.5) \times (8.5)^3
+4.6,3.1,log,log,mul,\log(4.6) \times \log(3.1)
+5.0,5.7,tan,square,add,\tan(5.0) + (5.7)^2
+2.0,5.0,cos,sqrt,div,\frac{\cos(2.0)}{\sqrt{5.0}}
+1.7,4.8,tan,exp,add,\tan(1.7) + \exp(4.8)
+3.4,4.2,square,sin,div,\frac{(3.4)^2}{\sin(4.2)}
+3.5,5.3,log,sin,add,\log(3.5) + \sin(5.3)
+5.1,7.4,sin,sin,add,\sin(5.1) + \sin(7.4)
+6.0,4.9,log,none,add,\log(6.0) + 4.9
+1.3,9.5,exp,sqrt,add,\exp(1.3) + \sqrt{9.5}
+1.4,4.1,none,sin,add,1.4 + \sin(4.1)
+1.8,8.7,cos,cos,add,\cos(1.8) + \cos(8.7)
+2.8,6.7,tan,sin,mul,\tan(2.8) \times \sin(6.7)
+2.9,5.6,none,none,sub,2.9 - 5.6
+2.1,5.3,cos,none,sub,\cos(2.1) - 5.3
+2.1,8.2,exp,exp,mul,\exp(2.1) \times \exp(8.2)
+1.8,7.2,tan,square,mul,\tan(1.8) \times (7.2)^2
+5.6,6.5,tan,log,mul,\tan(5.6) \times \log(6.5)
+3.3,6.4,square,none,mul,(3.3)^2 \times 6.4
+2.5,4.7,log,square,div,\frac{\log(2.5)}{(4.7)^2}
+3.9,6.2,none,cube,div,\frac{3.9}{(6.2)^3}
+1.3,7.7,cos,log,mul,\cos(1.3) \times \log(7.7)
+4.7,5.7,log,none,sub,\log(4.7) - 5.7
+5.6,6.8,sin,cube,mul,\sin(5.6) \times (6.8)^3
+2.8,5.1,none,sin,sub,2.8 - \sin(5.1)
+2.6,6.3,none,sin,add,2.6 + \sin(6.3)
+1.9,6.4,square,sqrt,div,\frac{(1.9)^2}{\sqrt{6.4}}
+5.5,6.0,exp,none,add,\exp(5.5) + 6.0
+3.2,9.4,square,sin,add,(3.2)^2 + \sin(9.4)
+1.5,3.7,none,sqrt,add,1.5 + \sqrt{3.7}
+1.8,6.9,square,exp,sub,(1.8)^2 - \exp(6.9)
+1.3,4.7,tan,cos,div,\frac{\tan(1.3)}{\cos(4.7)}
+4.0,6.9,tan,sin,add,\tan(4.0) + \sin(6.9)
+3.0,7.7,log,sin,div,\frac{\log(3.0)}{\sin(7.7)}
+1.4,6.6,sqrt,sin,mul,\sqrt{1.4} \times \sin(6.6)
+1.1,6.8,square,none,add,(1.1)^2 + 6.8
+1.0,4.1,log,sin,div,\frac{\log(1.0)}{\sin(4.1)}
+5.7,5.6,none,none,add,5.7 + 5.6
+3.1,7.7,square,square,sub,(3.1)^2 - (7.7)^2
+3.5,3.7,none,sin,sub,3.5 - \sin(3.7)
+1.3,6.7,log,sqrt,add,\log(1.3) + \sqrt{6.7}
+1.3,6.8,none,square,mul,1.3 \times (6.8)^2
+2.4,6.7,none,cos,div,\frac{2.4}{\cos(6.7)}
+2.1,7.1,exp,cube,mul,\exp(2.1) \times (7.1)^3
+3.7,5.8,none,none,div,\frac{3.7}{5.8}
+3.0,9.9,tan,cos,mul,\tan(3.0) \times \cos(9.9)
+3.4,5.6,none,cos,add,3.4 + \cos(5.6)
+3.6,5.8,tan,tan,div,\frac{\tan(3.6)}{\tan(5.8)}
+2.9,5.7,cube,square,add,(2.9)^3 + (5.7)^2
+2.5,5.5,sin,log,add,\sin(2.5) + \log(5.5)
+3.9,5.3,cos,log,add,\cos(3.9) + \log(5.3)
+4.3,6.6,tan,square,sub,\tan(4.3) - (6.6)^2
+0.1,6.0,sqrt,exp,mul,\sqrt{0.1} \times \exp(6.0)
+3.0,4.7,log,log,sub,\log(3.0) - \log(4.7)
+0.6,8.7,none,tan,sub,0.6 - \tan(8.7)
+2.5,7.5,sin,none,div,\frac{\sin(2.5)}{7.5}
+2.1,9.5,tan,tan,div,\frac{\tan(2.1)}{\tan(9.5)}
+5.2,7.0,exp,cos,add,\exp(5.2) + \cos(7.0)
+3.7,3.4,square,log,sub,(3.7)^2 - \log(3.4)
+3.8,4.7,square,tan,sub,(3.8)^2 - \tan(4.7)
+4.5,5.3,log,log,add,\log(4.5) + \log(5.3)
+4.6,7.6,square,cos,sub,(4.6)^2 - \cos(7.6)
+5.4,5.7,sqrt,cube,mul,\sqrt{5.4} \times (5.7)^3
+2.1,4.0,log,log,add,\log(2.1) + \log(4.0)
+1.0,7.2,cos,square,sub,\cos(1.0) - (7.2)^2
+2.7,6.0,square,cos,mul,(2.7)^2 \times \cos(6.0)
+0.9,6.0,sin,square,mul,\sin(0.9) \times (6.0)^2
+3.5,5.2,sqrt,tan,div,\frac{\sqrt{3.5}}{\tan(5.2)}
+1.6,5.8,square,tan,mul,(1.6)^2 \times \tan(5.8)
+1.6,8.2,none,log,sub,1.6 - \log(8.2)
+3.5,8.0,cube,none,add,(3.5)^3 + 8.0
+3.3,5.1,log,sqrt,sub,\log(3.3) - \sqrt{5.1}
+3.2,7.0,log,sin,sub,\log(3.2) - \sin(7.0)
+2.7,5.3,sqrt,none,mul,\sqrt{2.7} \times 5.3
+2.0,3.7,exp,none,sub,\exp(2.0) - 3.7
+2.2,4.2,sin,log,sub,\sin(2.2) - \log(4.2)
+3.7,3.2,none,exp,add,3.7 + \exp(3.2)
+4.6,7.9,square,none,add,(4.6)^2 + 7.9
+2.7,3.8,cos,cos,add,\cos(2.7) + \cos(3.8)
+2.8,7.9,cube,none,sub,(2.8)^3 - 7.9
+1.8,7.3,none,cos,mul,1.8 \times \cos(7.3)
+3.5,5.3,tan,sin,mul,\tan(3.5) \times \sin(5.3)
+3.3,5.9,cube,cos,sub,(3.3)^3 - \cos(5.9)
+1.6,6.7,square,none,div,\frac{(1.6)^2}{6.7}
+4.7,6.0,cos,sin,sub,\cos(4.7) - \sin(6.0)
+3.5,7.0,square,sin,div,\frac{(3.5)^2}{\sin(7.0)}
+5.4,5.6,cos,sqrt,sub,\cos(5.4) - \sqrt{5.6}
+1.0,6.1,none,exp,add,1.0 + \exp(6.1)
+2.0,3.6,cos,sqrt,mul,\cos(2.0) \times \sqrt{3.6}
+3.1,8.8,sqrt,cos,div,\frac{\sqrt{3.1}}{\cos(8.8)}
+4.1,7.1,square,cos,add,(4.1)^2 + \cos(7.1)
+1.3,5.4,none,cube,add,1.3 + (5.4)^3
+3.2,8.8,none,square,add,3.2 + (8.8)^2
+4.1,8.2,none,sin,add,4.1 + \sin(8.2)
+3.8,5.5,sin,none,mul,\sin(3.8) \times 5.5
+0.6,7.7,none,tan,add,0.6 + \tan(7.7)
+3.1,5.6,none,square,sub,3.1 - (5.6)^2
+3.7,7.0,sqrt,cos,add,\sqrt{3.7} + \cos(7.0)
+4.1,5.9,none,log,mul,4.1 \times \log(5.9)
+4.9,9.7,square,sqrt,mul,(4.9)^2 \times \sqrt{9.7}
+3.1,9.4,tan,none,add,\tan(3.1) + 9.4
+3.1,9.1,exp,log,add,\exp(3.1) + \log(9.1)
+3.0,8.4,square,none,sub,(3.0)^2 - 8.4
+4.8,4.6,sqrt,square,add,\sqrt{4.8} + (4.6)^2
+1.5,6.0,cos,square,sub,\cos(1.5) - (6.0)^2
+0.1,5.3,cos,sin,add,\cos(0.1) + \sin(5.3)
+2.7,9.0,cube,cube,mul,(2.7)^3 \times (9.0)^3
+4.1,9.0,exp,sin,mul,\exp(4.1) \times \sin(9.0)
+1.8,5.6,sqrt,cos,add,\sqrt{1.8} + \cos(5.6)
+1.5,5.9,none,exp,mul,1.5 \times \exp(5.9)
+3.3,6.5,none,sin,add,3.3 + \sin(6.5)
+4.1,9.3,log,none,add,\log(4.1) + 9.3
+2.3,5.3,cos,sin,div,\frac{\cos(2.3)}{\sin(5.3)}
+0.4,3.4,log,exp,sub,\log(0.4) - \exp(3.4)
+0.9,4.9,exp,cube,add,\exp(0.9) + (4.9)^3
+1.1,9.7,log,tan,add,\log(1.1) + \tan(9.7)
+2.4,5.0,sqrt,none,add,\sqrt{2.4} + 5.0
+2.2,7.9,log,cos,mul,\log(2.2) \times \cos(7.9)
+1.4,6.7,cos,sqrt,mul,\cos(1.4) \times \sqrt{6.7}
+5.1,5.7,exp,none,mul,\exp(5.1) \times 5.7
+3.7,6.0,square,cube,add,(3.7)^2 + (6.0)^3
+4.0,7.4,square,none,sub,(4.0)^2 - 7.4
+1.0,5.5,square,square,div,\frac{(1.0)^2}{(5.5)^2}
+1.1,6.6,none,sqrt,mul,1.1 \times \sqrt{6.6}
+2.6,8.0,sqrt,cos,add,\sqrt{2.6} + \cos(8.0)
+3.4,4.2,exp,none,mul,\exp(3.4) \times 4.2
+2.6,4.0,log,sqrt,add,\log(2.6) + \sqrt{4.0}
+3.8,4.8,square,cube,mul,(3.8)^2 \times (4.8)^3
+2.4,7.3,none,tan,add,2.4 + \tan(7.3)
+3.0,7.5,log,none,mul,\log(3.0) \times 7.5
+4.8,6.2,cube,sin,mul,(4.8)^3 \times \sin(6.2)
+2.5,6.4,log,sqrt,add,\log(2.5) + \sqrt{6.4}
+5.3,8.0,none,sin,add,5.3 + \sin(8.0)
+3.7,9.8,none,square,mul,3.7 \times (9.8)^2
+1.1,3.0,sin,exp,sub,\sin(1.1) - \exp(3.0)
+2.2,5.5,square,cos,sub,(2.2)^2 - \cos(5.5)
+1.4,6.2,log,sin,add,\log(1.4) + \sin(6.2)
+5.8,5.3,log,log,mul,\log(5.8) \times \log(5.3)
+3.6,7.8,none,none,mul,3.6 \times 7.8
+1.2,5.3,none,square,mul,1.2 \times (5.3)^2
+2.1,6.1,log,cube,add,\log(2.1) + (6.1)^3
+4.8,4.6,square,tan,mul,(4.8)^2 \times \tan(4.6)
+3.7,8.0,log,exp,sub,\log(3.7) - \exp(8.0)
+0.7,4.1,log,log,mul,\log(0.7) \times \log(4.1)
+2.8,8.8,square,cos,mul,(2.8)^2 \times \cos(8.8)
+1.1,3.0,log,cube,mul,\log(1.1) \times (3.0)^3
+1.9,9.3,sin,cos,sub,\sin(1.9) - \cos(9.3)
+2.7,7.9,none,square,div,\frac{2.7}{(7.9)^2}
+2.9,4.4,sqrt,none,sub,\sqrt{2.9} - 4.4
+1.7,7.5,none,sin,mul,1.7 \times \sin(7.5)
+2.6,6.3,tan,none,div,\frac{\tan(2.6)}{6.3}
+1.2,8.1,log,none,add,\log(1.2) + 8.1
+3.4,8.7,log,sin,add,\log(3.4) + \sin(8.7)
+3.7,4.3,log,tan,add,\log(3.7) + \tan(4.3)
+3.3,9.1,none,log,div,\frac{3.3}{\log(9.1)}
+1.4,8.7,sqrt,exp,mul,\sqrt{1.4} \times \exp(8.7)
+2.0,9.9,sin,cos,sub,\sin(2.0) - \cos(9.9)
+1.5,5.7,square,sqrt,div,\frac{(1.5)^2}{\sqrt{5.7}}
+5.9,9.2,sqrt,cos,mul,\sqrt{5.9} \times \cos(9.2)
+3.3,4.2,cube,sqrt,mul,(3.3)^3 \times \sqrt{4.2}
+2.9,8.6,sin,cos,mul,\sin(2.9) \times \cos(8.6)
+2.6,6.4,log,cos,add,\log(2.6) + \cos(6.4)
+1.1,4.3,none,tan,add,1.1 + \tan(4.3)
+0.1,9.2,none,tan,mul,0.1 \times \tan(9.2)
+5.2,7.4,none,cos,div,\frac{5.2}{\cos(7.4)}
+4.9,4.5,cos,none,sub,\cos(4.9) - 4.5
+2.6,8.6,none,none,add,2.6 + 8.6
+2.7,4.5,tan,log,add,\tan(2.7) + \log(4.5)
+2.3,5.8,log,exp,sub,\log(2.3) - \exp(5.8)
+2.9,6.7,square,none,mul,(2.9)^2 \times 6.7
+2.9,6.9,cos,exp,add,\cos(2.9) + \exp(6.9)
+2.6,9.3,tan,none,add,\tan(2.6) + 9.3
+4.4,8.0,none,sin,add,4.4 + \sin(8.0)
+3.0,5.2,sin,log,mul,\sin(3.0) \times \log(5.2)
+2.8,5.5,cube,cos,div,\frac{(2.8)^3}{\cos(5.5)}
+5.4,3.7,exp,sin,mul,\exp(5.4) \times \sin(3.7)
+5.3,6.8,log,cos,div,\frac{\log(5.3)}{\cos(6.8)}
+3.5,5.6,log,sin,add,\log(3.5) + \sin(5.6)
+0.3,4.5,none,log,div,\frac{0.3}{\log(4.5)}
+5.8,3.8,tan,none,add,\tan(5.8) + 3.8
+2.8,8.0,sqrt,sqrt,sub,\sqrt{2.8} - \sqrt{8.0}
+0.4,6.8,none,sin,sub,0.4 - \sin(6.8)
+4.7,6.1,sqrt,none,sub,\sqrt{4.7} - 6.1
+2.9,7.1,exp,sqrt,sub,\exp(2.9) - \sqrt{7.1}
+4.6,4.2,cube,cos,add,(4.6)^3 + \cos(4.2)
+2.8,3.5,none,cos,mul,2.8 \times \cos(3.5)
+4.2,6.9,sqrt,sqrt,add,\sqrt{4.2} + \sqrt{6.9}
+3.1,7.9,tan,exp,sub,\tan(3.1) - \exp(7.9)
+4.2,3.8,exp,none,add,\exp(4.2) + 3.8
+1.6,4.4,log,exp,sub,\log(1.6) - \exp(4.4)
+3.5,8.2,square,tan,add,(3.5)^2 + \tan(8.2)
+4.7,7.4,sqrt,none,add,\sqrt{4.7} + 7.4
+2.4,6.0,cos,none,add,\cos(2.4) + 6.0
+2.2,5.0,tan,none,mul,\tan(2.2) \times 5.0
+5.6,8.9,cos,none,add,\cos(5.6) + 8.9
+2.1,9.1,log,log,add,\log(2.1) + \log(9.1)
+3.2,5.3,square,cos,mul,(3.2)^2 \times \cos(5.3)
+4.2,8.4,cos,cos,add,\cos(4.2) + \cos(8.4)
+3.6,7.5,log,square,mul,\log(3.6) \times (7.5)^2
+1.8,4.8,none,log,add,1.8 + \log(4.8)
+5.1,7.8,cos,square,add,\cos(5.1) + (7.8)^2
+2.8,8.0,sin,cos,add,\sin(2.8) + \cos(8.0)
+5.8,9.3,cos,sin,div,\frac{\cos(5.8)}{\sin(9.3)}
+3.9,7.6,square,cube,add,(3.9)^2 + (7.6)^3
+0.3,4.9,log,exp,add,\log(0.3) + \exp(4.9)
+2.6,7.3,sqrt,square,add,\sqrt{2.6} + (7.3)^2
+2.2,7.2,log,square,mul,\log(2.2) \times (7.2)^2
+1.4,6.9,cube,tan,sub,(1.4)^3 - \tan(6.9)
+3.9,8.3,none,sin,add,3.9 + \sin(8.3)
+3.9,8.1,sqrt,none,add,\sqrt{3.9} + 8.1
+3.6,6.6,sin,exp,sub,\sin(3.6) - \exp(6.6)
+2.6,5.4,cos,sin,mul,\cos(2.6) \times \sin(5.4)
+5.4,4.7,none,square,add,5.4 + (4.7)^2
+1.2,7.2,sin,log,add,\sin(1.2) + \log(7.2)
+3.6,3.8,log,square,mul,\log(3.6) \times (3.8)^2
+5.6,3.5,sqrt,sin,sub,\sqrt{5.6} - \sin(3.5)
+3.3,3.1,cube,sqrt,mul,(3.3)^3 \times \sqrt{3.1}
+2.8,7.7,none,tan,add,2.8 + \tan(7.7)
+5.8,6.7,square,sin,sub,(5.8)^2 - \sin(6.7)
+0.7,5.9,none,cos,add,0.7 + \cos(5.9)
+4.8,7.5,none,sqrt,mul,4.8 \times \sqrt{7.5}
+3.6,8.0,cos,cos,mul,\cos(3.6) \times \cos(8.0)
+3.5,7.6,none,cube,mul,3.5 \times (7.6)^3
+3.0,5.6,square,square,add,(3.0)^2 + (5.6)^2
+0.2,6.9,cube,log,mul,(0.2)^3 \times \log(6.9)
+3.1,3.6,sqrt,sin,mul,\sqrt{3.1} \times \sin(3.6)
+3.6,8.9,log,sqrt,div,\frac{\log(3.6)}{\sqrt{8.9}}
+2.5,9.9,sqrt,square,sub,\sqrt{2.5} - (9.9)^2
+1.9,9.2,log,cos,add,\log(1.9) + \cos(9.2)
+1.6,5.0,log,sqrt,mul,\log(1.6) \times \sqrt{5.0}
+3.1,8.8,log,none,add,\log(3.1) + 8.8
+0.4,8.7,cos,tan,div,\frac{\cos(0.4)}{\tan(8.7)}
+3.3,7.4,tan,none,div,\frac{\tan(3.3)}{7.4}
+4.8,8.2,sqrt,log,mul,\sqrt{4.8} \times \log(8.2)
+3.6,6.9,square,sin,mul,(3.6)^2 \times \sin(6.9)
+5.4,5.7,exp,square,mul,\exp(5.4) \times (5.7)^2
+1.4,9.8,none,sqrt,add,1.4 + \sqrt{9.8}
+0.1,6.1,tan,cos,add,\tan(0.1) + \cos(6.1)
+2.8,8.0,sqrt,sqrt,sub,\sqrt{2.8} - \sqrt{8.0}
+1.1,6.7,tan,none,add,\tan(1.1) + 6.7
+1.5,4.4,square,none,add,(1.5)^2 + 4.4
+4.1,8.4,exp,cos,add,\exp(4.1) + \cos(8.4)
+0.6,8.2,none,none,mul,0.6 \times 8.2
+2.8,4.6,sqrt,square,sub,\sqrt{2.8} - (4.6)^2
+2.3,7.6,none,sin,mul,2.3 \times \sin(7.6)
+5.7,7.9,sin,log,mul,\sin(5.7) \times \log(7.9)
+2.7,3.9,cos,tan,mul,\cos(2.7) \times \tan(3.9)
+1.2,7.3,cube,log,add,(1.2)^3 + \log(7.3)
+2.3,8.3,sqrt,cos,sub,\sqrt{2.3} - \cos(8.3)
+1.0,8.8,exp,none,mul,\exp(1.0) \times 8.8
+3.4,8.9,cube,square,sub,(3.4)^3 - (8.9)^2
+3.9,8.1,sqrt,sin,mul,\sqrt{3.9} \times \sin(8.1)
+2.5,7.1,sin,sqrt,add,\sin(2.5) + \sqrt{7.1}
+0.6,5.2,log,none,mul,\log(0.6) \times 5.2
+3.9,5.3,sqrt,none,mul,\sqrt{3.9} \times 5.3
+5.0,8.2,cos,tan,add,\cos(5.0) + \tan(8.2)
+1.9,4.8,cube,none,add,(1.9)^3 + 4.8
+2.6,5.9,sin,sqrt,add,\sin(2.6) + \sqrt{5.9}
+1.3,6.1,tan,square,add,\tan(1.3) + (6.1)^2
+2.7,7.0,none,sin,mul,2.7 \times \sin(7.0)
+5.2,3.0,none,none,div,\frac{5.2}{3.0}
+3.9,6.1,sqrt,none,sub,\sqrt{3.9} - 6.1
+1.9,4.4,square,sin,mul,(1.9)^2 \times \sin(4.4)
+3.2,6.5,none,cos,mul,3.2 \times \cos(6.5)
+1.1,9.5,sqrt,sin,mul,\sqrt{1.1} \times \sin(9.5)
+4.8,7.2,none,none,sub,4.8 - 7.2
+3.6,6.3,sin,sqrt,sub,\sin(3.6) - \sqrt{6.3}
+3.1,7.2,log,square,mul,\log(3.1) \times (7.2)^2
+1.5,8.6,cube,log,add,(1.5)^3 + \log(8.6)
+3.3,6.6,sqrt,none,sub,\sqrt{3.3} - 6.6
+2.6,5.9,exp,exp,sub,\exp(2.6) - \exp(5.9)
+4.5,4.0,cos,none,mul,\cos(4.5) \times 4.0
+4.9,6.3,tan,tan,sub,\tan(4.9) - \tan(6.3)
+4.7,4.4,sin,none,sub,\sin(4.7) - 4.4
+4.2,9.9,sqrt,exp,mul,\sqrt{4.2} \times \exp(9.9)
+3.9,3.2,sin,sin,mul,\sin(3.9) \times \sin(3.2)
+3.4,7.4,cos,cos,div,\frac{\cos(3.4)}{\cos(7.4)}
+0.6,5.4,square,sqrt,add,(0.6)^2 + \sqrt{5.4}
+2.0,3.6,sqrt,sqrt,div,\frac{\sqrt{2.0}}{\sqrt{3.6}}
+1.5,5.8,sqrt,tan,add,\sqrt{1.5} + \tan(5.8)
+5.7,6.0,log,cube,div,\frac{\log(5.7)}{(6.0)^3}
+3.4,8.0,log,none,add,\log(3.4) + 8.0
+5.4,6.5,square,sqrt,sub,(5.4)^2 - \sqrt{6.5}
+1.3,8.4,log,none,sub,\log(1.3) - 8.4
+0.3,9.7,sqrt,sin,mul,\sqrt{0.3} \times \sin(9.7)
+0.9,5.7,log,cos,sub,\log(0.9) - \cos(5.7)
+1.9,3.8,none,square,add,1.9 + (3.8)^2
+1.8,6.5,square,square,sub,(1.8)^2 - (6.5)^2
+2.0,5.4,cube,tan,div,\frac{(2.0)^3}{\tan(5.4)}
+1.1,6.4,square,cos,add,(1.1)^2 + \cos(6.4)
+0.9,6.3,log,none,mul,\log(0.9) \times 6.3
+2.7,6.6,none,sqrt,add,2.7 + \sqrt{6.6}
+3.5,5.1,exp,cos,div,\frac{\exp(3.5)}{\cos(5.1)}
+2.1,8.5,cos,square,sub,\cos(2.1) - (8.5)^2
+4.8,4.1,cube,sqrt,add,(4.8)^3 + \sqrt{4.1}
+5.0,9.6,sin,log,mul,\sin(5.0) \times \log(9.6)
+2.4,8.2,sin,none,add,\sin(2.4) + 8.2
+3.4,9.2,cos,sqrt,sub,\cos(3.4) - \sqrt{9.2}
+4.6,7.8,none,none,div,\frac{4.6}{7.8}
+1.1,6.1,none,none,div,\frac{1.1}{6.1}
+0.1,8.5,none,cube,add,0.1 + (8.5)^3
+4.7,3.2,sqrt,exp,add,\sqrt{4.7} + \exp(3.2)
+2.9,7.6,log,none,div,\frac{\log(2.9)}{7.6}
+4.0,3.5,none,cos,add,4.0 + \cos(3.5)
+3.5,8.1,none,tan,mul,3.5 \times \tan(8.1)
+3.0,8.4,none,cos,sub,3.0 - \cos(8.4)
+2.4,5.8,cos,none,add,\cos(2.4) + 5.8
+4.2,5.2,none,exp,mul,4.2 \times \exp(5.2)
+2.1,5.7,sqrt,cos,add,\sqrt{2.1} + \cos(5.7)
+5.5,6.8,cos,square,sub,\cos(5.5) - (6.8)^2
+4.6,4.9,square,log,div,\frac{(4.6)^2}{\log(4.9)}
+2.0,7.2,sqrt,sqrt,add,\sqrt{2.0} + \sqrt{7.2}
+1.9,6.7,exp,none,add,\exp(1.9) + 6.7
+2.2,6.5,exp,cos,add,\exp(2.2) + \cos(6.5)
+0.3,5.1,none,exp,sub,0.3 - \exp(5.1)
+1.7,6.2,sin,cos,add,\sin(1.7) + \cos(6.2)
+0.5,9.7,square,square,div,\frac{(0.5)^2}{(9.7)^2}
+4.8,6.9,square,cos,sub,(4.8)^2 - \cos(6.9)
+0.6,5.7,cos,log,add,\cos(0.6) + \log(5.7)
+1.3,6.4,none,cos,sub,1.3 - \cos(6.4)
+3.5,8.2,none,exp,mul,3.5 \times \exp(8.2)
+1.6,8.2,square,none,add,(1.6)^2 + 8.2
+2.8,5.2,cube,sin,add,(2.8)^3 + \sin(5.2)
+2.4,3.9,cube,cube,add,(2.4)^3 + (3.9)^3
+2.3,5.7,none,sqrt,mul,2.3 \times \sqrt{5.7}
+4.7,6.4,sin,sin,add,\sin(4.7) + \sin(6.4)
+4.6,6.0,tan,cos,mul,\tan(4.6) \times \cos(6.0)
+2.9,4.4,sqrt,none,mul,\sqrt{2.9} \times 4.4
+1.8,7.5,none,sin,sub,1.8 - \sin(7.5)
+5.8,7.3,square,tan,add,(5.8)^2 + \tan(7.3)
+6.0,6.8,tan,sin,div,\frac{\tan(6.0)}{\sin(6.8)}
+1.8,5.5,cos,tan,add,\cos(1.8) + \tan(5.5)
+4.2,6.0,square,sin,mul,(4.2)^2 \times \sin(6.0)
+1.5,5.6,cos,none,mul,\cos(1.5) \times 5.6
+0.9,4.3,square,sin,mul,(0.9)^2 \times \sin(4.3)
+2.7,7.3,tan,sqrt,sub,\tan(2.7) - \sqrt{7.3}
+5.4,6.7,log,cube,sub,\log(5.4) - (6.7)^3
+3.9,6.4,sqrt,cos,add,\sqrt{3.9} + \cos(6.4)
+4.4,4.9,none,log,mul,4.4 \times \log(4.9)
+2.8,7.1,none,none,mul,2.8 \times 7.1
+2.0,3.4,sin,log,div,\frac{\sin(2.0)}{\log(3.4)}
+1.4,5.8,log,cos,mul,\log(1.4) \times \cos(5.8)
+3.6,9.5,log,none,add,\log(3.6) + 9.5
+3.6,3.0,cos,none,div,\frac{\cos(3.6)}{3.0}
+4.0,5.7,tan,square,add,\tan(4.0) + (5.7)^2
+0.8,7.0,sqrt,exp,div,\frac{\sqrt{0.8}}{\exp(7.0)}
+3.4,9.9,none,sin,mul,3.4 \times \sin(9.9)
+4.6,4.2,cos,cube,add,\cos(4.6) + (4.2)^3
+2.4,6.3,cube,sqrt,sub,(2.4)^3 - \sqrt{6.3}
+3.6,7.6,sin,cube,mul,\sin(3.6) \times (7.6)^3
+3.2,6.3,log,none,div,\frac{\log(3.2)}{6.3}
+1.9,8.8,tan,none,add,\tan(1.9) + 8.8
+2.9,4.7,sqrt,log,mul,\sqrt{2.9} \times \log(4.7)
+4.8,9.4,cos,sin,sub,\cos(4.8) - \sin(9.4)
+4.7,4.9,log,none,add,\log(4.7) + 4.9
+2.3,4.9,sqrt,exp,mul,\sqrt{2.3} \times \exp(4.9)
+1.3,7.2,square,sin,sub,(1.3)^2 - \sin(7.2)
+2.9,5.4,cos,cos,sub,\cos(2.9) - \cos(5.4)
+3.6,6.0,square,none,add,(3.6)^2 + 6.0
+4.7,5.9,square,none,add,(4.7)^2 + 5.9
+3.2,8.9,cube,sqrt,mul,(3.2)^3 \times \sqrt{8.9}
+3.7,5.9,log,cube,mul,\log(3.7) \times (5.9)^3
+3.2,7.4,sin,sqrt,add,\sin(3.2) + \sqrt{7.4}
+5.7,3.6,cos,cos,add,\cos(5.7) + \cos(3.6)
+4.8,6.2,log,cube,mul,\log(4.8) \times (6.2)^3
+5.8,8.0,square,none,mul,(5.8)^2 \times 8.0
+3.1,3.6,sqrt,tan,mul,\sqrt{3.1} \times \tan(3.6)
+2.8,8.9,cos,log,sub,\cos(2.8) - \log(8.9)
+2.6,6.5,square,sin,mul,(2.6)^2 \times \sin(6.5)
+0.9,6.4,exp,none,mul,\exp(0.9) \times 6.4
+4.7,8.5,sqrt,log,div,\frac{\sqrt{4.7}}{\log(8.5)}
+4.8,9.1,sin,sin,sub,\sin(4.8) - \sin(9.1)
+3.4,6.7,log,tan,mul,\log(3.4) \times \tan(6.7)
+5.6,5.9,none,sin,mul,5.6 \times \sin(5.9)
+1.2,7.5,sin,none,sub,\sin(1.2) - 7.5
+2.5,8.0,log,sin,sub,\log(2.5) - \sin(8.0)
+2.5,3.4,none,sqrt,add,2.5 + \sqrt{3.4}
+5.5,6.5,sin,sqrt,div,\frac{\sin(5.5)}{\sqrt{6.5}}
+1.8,6.1,log,square,sub,\log(1.8) - (6.1)^2
+4.3,4.0,cos,square,add,\cos(4.3) + (4.0)^2
+3.3,3.5,square,exp,add,(3.3)^2 + \exp(3.5)
+5.2,3.8,cube,tan,add,(5.2)^3 + \tan(3.8)
+3.4,5.5,cube,sin,mul,(3.4)^3 \times \sin(5.5)
+5.8,7.3,sqrt,log,add,\sqrt{5.8} + \log(7.3)
+5.0,3.8,exp,none,mul,\exp(5.0) \times 3.8
+1.1,7.2,none,none,mul,1.1 \times 7.2
+3.0,6.7,cube,cos,sub,(3.0)^3 - \cos(6.7)
+3.0,3.5,sqrt,none,mul,\sqrt{3.0} \times 3.5
+0.7,7.0,none,cube,add,0.7 + (7.0)^3
+3.1,3.2,sin,none,sub,\sin(3.1) - 3.2
+3.6,6.6,none,none,add,3.6 + 6.6
+3.0,7.2,square,cos,add,(3.0)^2 + \cos(7.2)
+3.9,4.3,sqrt,sqrt,mul,\sqrt{3.9} \times \sqrt{4.3}
+3.1,4.0,none,square,div,\frac{3.1}{(4.0)^2}
+4.1,3.7,square,square,mul,(4.1)^2 \times (3.7)^2
+2.4,7.5,square,square,add,(2.4)^2 + (7.5)^2
+1.2,5.8,sin,none,add,\sin(1.2) + 5.8
+0.5,7.2,exp,exp,div,\frac{\exp(0.5)}{\exp(7.2)}
+5.1,7.4,none,sqrt,add,5.1 + \sqrt{7.4}
+2.2,6.1,log,square,div,\frac{\log(2.2)}{(6.1)^2}
+1.1,6.3,sqrt,tan,mul,\sqrt{1.1} \times \tan(6.3)
+3.3,5.4,cube,cos,add,(3.3)^3 + \cos(5.4)
+2.6,5.7,square,sqrt,add,(2.6)^2 + \sqrt{5.7}
+4.2,6.9,none,square,add,4.2 + (6.9)^2
+5.9,5.4,none,sin,mul,5.9 \times \sin(5.4)
+3.5,4.2,none,cos,add,3.5 + \cos(4.2)
+4.0,7.3,none,cube,sub,4.0 - (7.3)^3
+5.3,5.4,log,sqrt,sub,\log(5.3) - \sqrt{5.4}
+1.2,8.3,none,none,add,1.2 + 8.3
+5.7,6.3,sin,square,mul,\sin(5.7) \times (6.3)^2
+0.3,7.4,sqrt,log,div,\frac{\sqrt{0.3}}{\log(7.4)}
+2.8,9.1,sqrt,cube,add,\sqrt{2.8} + (9.1)^3
+1.8,7.0,exp,none,add,\exp(1.8) + 7.0
+4.3,8.1,exp,square,sub,\exp(4.3) - (8.1)^2
+2.0,4.7,sqrt,sin,div,\frac{\sqrt{2.0}}{\sin(4.7)}
+3.8,9.1,square,cos,div,\frac{(3.8)^2}{\cos(9.1)}
+0.3,4.0,square,none,sub,(0.3)^2 - 4.0
+2.1,4.6,sin,none,mul,\sin(2.1) \times 4.6
+1.5,4.3,square,square,add,(1.5)^2 + (4.3)^2
+3.5,6.0,square,sqrt,sub,(3.5)^2 - \sqrt{6.0}
+2.1,5.9,cube,none,mul,(2.1)^3 \times 5.9
+2.0,4.8,square,tan,div,\frac{(2.0)^2}{\tan(4.8)}
+4.0,4.9,cos,none,mul,\cos(4.0) \times 4.9
+1.4,8.7,exp,sin,add,\exp(1.4) + \sin(8.7)
+5.6,8.6,log,sin,add,\log(5.6) + \sin(8.6)
+4.6,8.0,log,sqrt,div,\frac{\log(4.6)}{\sqrt{8.0}}
+3.2,5.7,sin,sin,sub,\sin(3.2) - \sin(5.7)
+3.2,6.0,tan,sqrt,add,\tan(3.2) + \sqrt{6.0}
+2.9,5.3,log,cube,mul,\log(2.9) \times (5.3)^3
+4.9,8.1,none,sin,add,4.9 + \sin(8.1)
+1.2,7.9,tan,none,div,\frac{\tan(1.2)}{7.9}
+1.3,7.8,log,cube,sub,\log(1.3) - (7.8)^3
+5.6,6.2,log,tan,div,\frac{\log(5.6)}{\tan(6.2)}
+1.9,5.8,log,tan,sub,\log(1.9) - \tan(5.8)
+3.8,5.7,exp,none,mul,\exp(3.8) \times 5.7
+5.4,6.3,tan,none,mul,\tan(5.4) \times 6.3
+3.4,5.2,sin,sin,add,\sin(3.4) + \sin(5.2)
+4.5,6.4,cos,log,mul,\cos(4.5) \times \log(6.4)
+2.9,9.7,log,cos,div,\frac{\log(2.9)}{\cos(9.7)}
+2.4,8.5,cube,none,sub,(2.4)^3 - 8.5
+3.5,7.4,none,sqrt,sub,3.5 - \sqrt{7.4}
+2.5,5.3,exp,none,div,\frac{\exp(2.5)}{5.3}
+2.9,5.5,sin,none,mul,\sin(2.9) \times 5.5
+2.3,5.0,square,none,add,(2.3)^2 + 5.0
+3.4,7.5,log,sqrt,sub,\log(3.4) - \sqrt{7.5}
+4.0,7.6,log,cos,mul,\log(4.0) \times \cos(7.6)
+2.8,6.9,sqrt,sqrt,sub,\sqrt{2.8} - \sqrt{6.9}
+3.5,6.9,sqrt,cos,add,\sqrt{3.5} + \cos(6.9)
+2.0,7.2,sqrt,none,sub,\sqrt{2.0} - 7.2
+4.2,4.8,square,cos,mul,(4.2)^2 \times \cos(4.8)
+3.8,3.2,none,cube,mul,3.8 \times (3.2)^3
+1.6,8.4,cos,exp,mul,\cos(1.6) \times \exp(8.4)
+1.2,8.0,none,sin,add,1.2 + \sin(8.0)
+3.8,5.4,cube,tan,mul,(3.8)^3 \times \tan(5.4)
+3.3,5.2,exp,log,mul,\exp(3.3) \times \log(5.2)
+3.4,9.2,log,sqrt,sub,\log(3.4) - \sqrt{9.2}
+5.9,4.2,square,tan,mul,(5.9)^2 \times \tan(4.2)
+2.8,8.0,square,none,sub,(2.8)^2 - 8.0
+3.1,8.2,tan,sin,mul,\tan(3.1) \times \sin(8.2)
+4.1,8.6,cos,cos,add,\cos(4.1) + \cos(8.6)
+3.7,7.4,none,sin,add,3.7 + \sin(7.4)
+4.1,7.7,square,square,mul,(4.1)^2 \times (7.7)^2
+2.7,7.3,square,cube,mul,(2.7)^2 \times (7.3)^3
+4.3,6.0,sin,none,add,\sin(4.3) + 6.0
+1.7,4.4,sqrt,sqrt,add,\sqrt{1.7} + \sqrt{4.4}
+2.6,5.3,square,cos,div,\frac{(2.6)^2}{\cos(5.3)}
+5.7,5.5,sqrt,cos,add,\sqrt{5.7} + \cos(5.5)
+3.3,7.1,tan,sin,mul,\tan(3.3) \times \sin(7.1)
+1.1,3.5,log,none,mul,\log(1.1) \times 3.5
+5.8,4.1,sqrt,cos,add,\sqrt{5.8} + \cos(4.1)
+2.5,5.6,sqrt,square,add,\sqrt{2.5} + (5.6)^2
+5.4,4.8,log,cos,add,\log(5.4) + \cos(4.8)
+3.2,7.6,cos,cos,sub,\cos(3.2) - \cos(7.6)
+1.9,5.6,cos,log,mul,\cos(1.9) \times \log(5.6)

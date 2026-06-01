@@ -1,0 +1,146 @@
+{
+    "name": "biography",
+    "task_type": "regression",
+    "column_names": [
+        "age",
+        "salary",
+        "sex",
+        "birth_state",
+        "college",
+        "degree",
+        "occupation",
+        "biography"
+    ],
+    "num_col_idx": [
+        0
+    ],
+    "cat_col_idx": [
+        2,
+        3,
+        4,
+        5,
+        6
+    ],
+    "text_col_idx": [
+        7
+    ],
+    "target_col_idx": [
+        1
+    ],
+    "column_info": {
+        "age": {
+            "type": "float",
+            "min": 21.0,
+            "max": 70.0,
+            "mean": 45.29944444444445,
+            "median": 45.0,
+            "std": 14.3924947305755
+        },
+        "salary": {
+            "type": "float",
+            "min": 75.0,
+            "max": 197.0,
+            "mean": 117.82344444444445,
+            "median": 123.0,
+            "std": 26.25022227925346
+        },
+        "sex": {
+            "type": "category",
+            "candidates": [
+                "male",
+                "female"
+            ]
+        },
+        "birth_state": {
+            "type": "category",
+            "candidates": [
+                "texas",
+                "california",
+                "georgia",
+                "illinois",
+                "new york",
+                "arizona",
+                "florida",
+                "colorado",
+                "massachusetts",
+                "washington"
+            ]
+        },
+        "college": {
+            "type": "category",
+            "candidates": [
+                "ohio state university",
+                "houston community college",
+                "university of central florida",
+                "university of michigan",
+                "santa monica college",
+                "arizona state university",
+                "harvard university",
+                "new york university",
+                "stanford university"
+            ]
+        },
+        "degree": {
+            "type": "category",
+            "candidates": [
+                "associate",
+                "bachelor",
+                "master",
+                "doctoral"
+            ]
+        },
+        "occupation": {
+            "type": "category",
+            "candidates": [
+                "healthcare practitioner",
+                "education professional",
+                "software developer",
+                "research specialist",
+                "construction professional",
+                "creative content professional",
+                "customer services professional",
+                "public services coordinator",
+                "business operations analyst",
+                "technical services specialist"
+            ]
+        },
+        "biography": {
+            "type": "text",
+            "min": 35,
+            "max": 41,
+            "mean": 38.10966666666667,
+            "median": 38.0,
+            "std": 0.9974274611073881
+        }
+    },
+    "metadata": {
+        "columns": {
+            "0": {
+                "sdtype": "numerical",
+                "computer_representation": "Float"
+            },
+            "1": {
+                "sdtype": "numerical",
+                "computer_representation": "Float"
+            },
+            "2": {
+                "sdtype": "categorical"
+            },
+            "3": {
+                "sdtype": "categorical"
+            },
+            "4": {
+                "sdtype": "categorical"
+            },
+            "5": {
+                "sdtype": "categorical"
+            },
+            "6": {
+                "sdtype": "categorical"
+            },
+            "7": {
+                "sdtype": "text"
+            }
+        }
+    }
+}

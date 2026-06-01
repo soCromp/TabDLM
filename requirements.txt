@@ -1,0 +1,14 @@
+transformers
+peft
+huggingface_hub
+safetensors
+numpy
+pandas
+scipy
+scikit-learn
+tomli
+tqdm
+wandb
+sdmetrics
+xgboost
+prdc

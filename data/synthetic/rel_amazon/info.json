@@ -1,0 +1,153 @@
+{
+    "name": "rel_amazon",
+    "task_type": "mulclass",
+    "column_names": [
+        "price",
+        "review_time",
+        "rating",
+        "category",
+        "verified",
+        "brand",
+        "title",
+        "description",
+        "review_text",
+        "summary"
+    ],
+    "num_col_idx": [
+        0,
+        1
+    ],
+    "cat_col_idx": [
+        4
+    ],
+    "text_col_idx": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        9
+    ],
+    "target_col_idx": [
+        2
+    ],
+    "column_info": {
+        "price": {
+            "type": "float",
+            "min": 0.0,
+            "max": 999.98,
+            "mean": 17.354664444444445,
+            "median": 12.34,
+            "std": 39.94478406380269
+        },
+        "review_time": {
+            "type": "float",
+            "min": 3.0,
+            "max": 2922.0,
+            "mean": 2336.255777777778,
+            "median": 2451.0,
+            "std": 465.9906279136431
+        },
+        "rating": {
+            "type": "category",
+            "candidates": [
+                "5",
+                "1",
+                "4",
+                "2",
+                "3"
+            ]
+        },
+        "category": {
+            "type": "text",
+            "min": 1,
+            "max": 21,
+            "mean": 3.162888888888889,
+            "median": 2.0,
+            "std": 2.47627562572052
+        },
+        "verified": {
+            "type": "category",
+            "candidates": [
+                "True",
+                "False"
+            ]
+        },
+        "brand": {
+            "type": "text",
+            "min": 1,
+            "max": 11,
+            "mean": 4.7877777777777775,
+            "median": 5.0,
+            "std": 1.204046649715724
+        },
+        "title": {
+            "type": "text",
+            "min": 1,
+            "max": 39,
+            "mean": 6.307111111111111,
+            "median": 5.0,
+            "std": 4.11961550731167
+        },
+        "description": {
+            "type": "text",
+            "min": 1,
+            "max": 74,
+            "mean": 18.06222222222222,
+            "median": 15.0,
+            "std": 14.585253644247404
+        },
+        "review_text": {
+            "type": "text",
+            "min": 1,
+            "max": 72,
+            "mean": 19.589111111111112,
+            "median": 21.0,
+            "std": 13.659932163416672
+        },
+        "summary": {
+            "type": "text",
+            "min": 1,
+            "max": 21,
+            "mean": 3.162888888888889,
+            "median": 2.0,
+            "std": 2.47627562572052
+        }
+    },
+    "metadata": {
+        "columns": {
+            "0": {
+                "sdtype": "numerical",
+                "computer_representation": "Float"
+            },
+            "1": {
+                "sdtype": "numerical",
+                "computer_representation": "Float"
+            },
+            "2": {
+                "sdtype": "categorical"
+            },
+            "4": {
+                "sdtype": "categorical"
+            },
+            "3": {
+                "sdtype": "text"
+            },
+            "5": {
+                "sdtype": "text"
+            },
+            "6": {
+                "sdtype": "text"
+            },
+            "7": {
+                "sdtype": "text"
+            },
+            "8": {
+                "sdtype": "text"
+            },
+            "9": {
+                "sdtype": "text"
+            }
+        }
+    }
+}

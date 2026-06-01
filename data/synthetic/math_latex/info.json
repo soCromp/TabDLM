@@ -1,0 +1,114 @@
+{
+    "name": "math_latex_3",
+    "task_type": "consistence_check",
+    "column_names": [
+        "x1",
+        "x2",
+        "operation_x1",
+        "operation_x2",
+        "operation_between",
+        "latex_expression"
+    ],
+    "num_col_idx": [
+        0,
+        1
+    ],
+    "cat_col_idx": [
+        2,
+        3,
+        4
+    ],
+    "text_col_idx": [
+        5
+    ],
+    "target_col_idx": [
+        5
+    ],
+    "column_info": {
+        "x1": {
+            "type": "float",
+            "min": 0.1,
+            "max": 6.0,
+            "mean": 3.0187,
+            "median": 3.0,
+            "std": 1.5400632954147582
+        },
+        "x2": {
+            "type": "float",
+            "min": 3.0,
+            "max": 9.9,
+            "mean": 6.490322222222223,
+            "median": 6.5,
+            "std": 1.7403944648156544
+        },
+        "operation_x1": {
+            "type": "category",
+            "candidates": [
+                "none",
+                "cos",
+                "sqrt",
+                "exp",
+                "log",
+                "square",
+                "tan",
+                "cube",
+                "sin"
+            ]
+        },
+        "operation_x2": {
+            "type": "category",
+            "candidates": [
+                "sqrt",
+                "cos",
+                "none",
+                "log",
+                "tan",
+                "square",
+                "cube",
+                "exp",
+                "sin"
+            ]
+        },
+        "operation_between": {
+            "type": "category",
+            "candidates": [
+                "sub",
+                "add",
+                "div",
+                "mul"
+            ]
+        },
+        "latex_expression": {
+            "type": "text",
+            "min": 1,
+            "max": 3,
+            "mean": 2.708222222222222,
+            "median": 3.0,
+            "std": 0.7060288027037646
+        }
+    },
+    "metadata": {
+        "columns": {
+            "0": {
+                "sdtype": "numerical",
+                "computer_representation": "Float"
+            },
+            "1": {
+                "sdtype": "numerical",
+                "computer_representation": "Float"
+            },
+            "2": {
+                "sdtype": "categorical"
+            },
+            "3": {
+                "sdtype": "categorical"
+            },
+            "4": {
+                "sdtype": "categorical"
+            },
+            "5": {
+                "sdtype": "text"
+            }
+        }
+    }
+}

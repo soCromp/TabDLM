@@ -1,0 +1,139 @@
+{
+    "name": "rel_arxiv",
+    "task_type": "mulclass",
+    "column_names": [
+        "days_since_first_submit",
+        "paper_year",
+        "title_word_count",
+        "abstract_word_count",
+        "Category",
+        "Title",
+        "arXiv_Code",
+        "Abstract"
+    ],
+    "num_col_idx": [
+        0,
+        1,
+        2,
+        3
+    ],
+    "cat_col_idx": [],
+    "text_col_idx": [
+        5,
+        6,
+        7
+    ],
+    "target_col_idx": [
+        4
+    ],
+    "column_info": {
+        "days_since_first_submit": {
+            "type": "float",
+            "min": 2.0,
+            "max": 1825.0,
+            "mean": 856.9175,
+            "median": 828.0,
+            "std": 518.1932344703207
+        },
+        "paper_year": {
+            "type": "float",
+            "min": 2018.0,
+            "max": 2022.0,
+            "mean": 2019.857,
+            "median": 2020.0,
+            "std": 1.3924926423287611
+        },
+        "title_word_count": {
+            "type": "float",
+            "min": 1.0,
+            "max": 27.0,
+            "mean": 8.2335,
+            "median": 8.0,
+            "std": 3.04857363373432
+        },
+        "abstract_word_count": {
+            "type": "float",
+            "min": 3.0,
+            "max": 109.0,
+            "mean": 71.72775,
+            "median": 74.0,
+            "std": 17.26754678524124
+        },
+        "Category": {
+            "type": "category",
+            "candidates": [
+                "13",
+                "4",
+                "3",
+                "12",
+                "1",
+                "5",
+                "2",
+                "0",
+                "8",
+                "7",
+                "6",
+                "14",
+                "9",
+                "10",
+                "11"
+            ]
+        },
+        "Title": {
+            "type": "text",
+            "min": 1,
+            "max": 27,
+            "mean": 8.2335,
+            "median": 8.0,
+            "std": 3.04857363373432
+        },
+        "arXiv_Code": {
+            "type": "text",
+            "min": 1,
+            "max": 1,
+            "mean": 1.0,
+            "median": 1.0,
+            "std": 0.0
+        },
+        "Abstract": {
+            "type": "text",
+            "min": 3,
+            "max": 109,
+            "mean": 71.72775,
+            "median": 74.0,
+            "std": 17.26754678524124
+        }
+    },
+    "metadata": {
+        "columns": {
+            "0": {
+                "sdtype": "numerical",
+                "computer_representation": "Float"
+            },
+            "1": {
+                "sdtype": "numerical",
+                "computer_representation": "Float"
+            },
+            "2": {
+                "sdtype": "numerical",
+                "computer_representation": "Float"
+            },
+            "3": {
+                "sdtype": "numerical",
+                "computer_representation": "Float"
+            },
+            "4": {
+                "sdtype": "categorical"
+            },
+            "5": {
+                "sdtype": "text"
+            },
+            "6": {
+                "sdtype": "text"
+            },
+            "7": {
+                "sdtype": "text"
+            }
+        }
+    }
+}

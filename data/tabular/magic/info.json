@@ -1,0 +1,169 @@
+{
+    "name": "magic",
+    "task_type": "binclass",
+    "column_names": [
+        "fLength",
+        "fWidth",
+        "fSize",
+        "fConc",
+        "fConc1",
+        "fAsym",
+        "fM3Long",
+        "fM3Trans",
+        "fAlpha",
+        "fDist",
+        "class"
+    ],
+    "num_col_idx": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+    ],
+    "cat_col_idx": [],
+    "target_col_idx": [
+        10
+    ],
+    "column_info": {
+        "fLength": {
+            "type": "float",
+            "min": 4.2835,
+            "max": 334.177,
+            "mean": 53.25015392744479,
+            "median": 37.1477,
+            "std": 42.364854942802815
+        },
+        "fWidth": {
+            "type": "float",
+            "min": 0.0,
+            "max": 256.382,
+            "mean": 22.180966219768667,
+            "median": 17.139899999999997,
+            "std": 18.346056295681592
+        },
+        "fSize": {
+            "type": "float",
+            "min": 1.9413,
+            "max": 5.3233,
+            "mean": 2.825016961093586,
+            "median": 2.7396,
+            "std": 0.4725986486893078
+        },
+        "fConc": {
+            "type": "float",
+            "min": 0.0131,
+            "max": 0.893,
+            "mean": 0.3803270715036804,
+            "median": 0.35415,
+            "std": 0.18281314722123718
+        },
+        "fConc1": {
+            "type": "float",
+            "min": 0.0003,
+            "max": 0.6752,
+            "mean": 0.21465713459516297,
+            "median": 0.1965,
+            "std": 0.11051079890195785
+        },
+        "fAsym": {
+            "type": "float",
+            "min": -457.9161,
+            "max": 575.2407,
+            "mean": -4.331745157728706,
+            "median": 4.01305,
+            "std": 59.20606198471529
+        },
+        "fM3Long": {
+            "type": "float",
+            "min": -331.78,
+            "max": 238.321,
+            "mean": 10.545544815983174,
+            "median": 15.3141,
+            "std": 51.00011801388582
+        },
+        "fM3Trans": {
+            "type": "float",
+            "min": -205.8947,
+            "max": 179.851,
+            "mean": 0.2497259568874868,
+            "median": 0.6661999999999999,
+            "std": 20.827438947228178
+        },
+        "fAlpha": {
+            "type": "float",
+            "min": 0.0,
+            "max": 90.0,
+            "mean": 27.645706677181913,
+            "median": 17.679499999999997,
+            "std": 26.103620510358294
+        },
+        "fDist": {
+            "type": "float",
+            "min": 1.2826,
+            "max": 495.561,
+            "mean": 193.81802646687697,
+            "median": 191.85145,
+            "std": 74.73178696313757
+        },
+        "class": {
+            "type": "category",
+            "candidates": [
+                "g",
+                "h"
+            ]
+        }
+    },
+    "metadata": {
+        "columns": {
+            "0": {
+                "sdtype": "numerical",
+                "computer_representation": "Float"
+            },
+            "1": {
+                "sdtype": "numerical",
+                "computer_representation": "Float"
+            },
+            "2": {
+                "sdtype": "numerical",
+                "computer_representation": "Float"
+            },
+            "3": {
+                "sdtype": "numerical",
+                "computer_representation": "Float"
+            },
+            "4": {
+                "sdtype": "numerical",
+                "computer_representation": "Float"
+            },
+            "5": {
+                "sdtype": "numerical",
+                "computer_representation": "Float"
+            },
+            "6": {
+                "sdtype": "numerical",
+                "computer_representation": "Float"
+            },
+            "7": {
+                "sdtype": "numerical",
+                "computer_representation": "Float"
+            },
+            "8": {
+                "sdtype": "numerical",
+                "computer_representation": "Float"
+            },
+            "9": {
+                "sdtype": "numerical",
+                "computer_representation": "Float"
+            },
+            "10": {
+                "sdtype": "categorical"
+            }
+        }
+    }
+}

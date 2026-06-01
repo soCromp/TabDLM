@@ -1,0 +1,305 @@
+{
+    "name": "shoppers",
+    "task_type": "binclass",
+    "column_names": [
+        "Administrative",
+        "Administrative_Duration",
+        "Informational",
+        "Informational_Duration",
+        "ProductRelated",
+        "ProductRelated_Duration",
+        "BounceRates",
+        "ExitRates",
+        "PageValues",
+        "SpecialDay",
+        "Month",
+        "OperatingSystems",
+        "Browser",
+        "Region",
+        "TrafficType",
+        "VisitorType",
+        "Weekend",
+        "Revenue"
+    ],
+    "num_col_idx": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+    ],
+    "cat_col_idx": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+    ],
+    "target_col_idx": [
+        17
+    ],
+    "column_info": {
+        "Administrative": {
+            "type": "float",
+            "min": 0.0,
+            "max": 27.0,
+            "mean": 2.3151662611516626,
+            "median": 1.0,
+            "std": 3.3217841061569113
+        },
+        "Administrative_Duration": {
+            "type": "float",
+            "min": 0.0,
+            "max": 3398.75,
+            "mean": 80.81861053933592,
+            "median": 7.5,
+            "std": 176.77910747048634
+        },
+        "Informational": {
+            "type": "float",
+            "min": 0.0,
+            "max": 24.0,
+            "mean": 0.5035685320356853,
+            "median": 0.0,
+            "std": 1.270156425983391
+        },
+        "Informational_Duration": {
+            "type": "float",
+            "min": 0.0,
+            "max": 2549.375,
+            "mean": 34.47239792772304,
+            "median": 0.0,
+            "std": 140.74929442219798
+        },
+        "ProductRelated": {
+            "type": "float",
+            "min": 0.0,
+            "max": 705.0,
+            "mean": 31.731467964314678,
+            "median": 18.0,
+            "std": 44.47550330493652
+        },
+        "ProductRelated_Duration": {
+            "type": "float",
+            "min": 0.0,
+            "max": 63973.52223,
+            "mean": 1194.7462199688268,
+            "median": 598.9369047499999,
+            "std": 1913.6692878720035
+        },
+        "BounceRates": {
+            "type": "float",
+            "min": 0.0,
+            "max": 0.2,
+            "mean": 0.02219138047072182,
+            "median": 0.0031124675,
+            "std": 0.048488321806260656
+        },
+        "ExitRates": {
+            "type": "float",
+            "min": 0.0,
+            "max": 0.2,
+            "mean": 0.04307279776650446,
+            "median": 0.0251564025,
+            "std": 0.048596540551443565
+        },
+        "PageValues": {
+            "type": "float",
+            "min": 0.0,
+            "max": 361.7637419,
+            "mean": 5.889257862693592,
+            "median": 0.0,
+            "std": 18.568436607806525
+        },
+        "SpecialDay": {
+            "type": "float",
+            "min": 0.0,
+            "max": 1.0,
+            "mean": 0.061427412814274135,
+            "median": 0.0,
+            "std": 0.19891727315262864
+        },
+        "Month": {
+            "type": "category",
+            "candidates": [
+                "Feb",
+                "Mar",
+                "May",
+                "Oct",
+                "June",
+                "Jul",
+                "Aug",
+                "Nov",
+                "Sep",
+                "Dec"
+            ]
+        },
+        "OperatingSystems": {
+            "type": "category",
+            "candidates": [
+                "1",
+                "2",
+                "4",
+                "3",
+                "7",
+                "6",
+                "8",
+                "5"
+            ]
+        },
+        "Browser": {
+            "type": "category",
+            "candidates": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "10",
+                "8",
+                "9",
+                "12",
+                "13",
+                "11"
+            ]
+        },
+        "Region": {
+            "type": "category",
+            "candidates": [
+                "1",
+                "9",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8"
+            ]
+        },
+        "TrafficType": {
+            "type": "category",
+            "candidates": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10",
+                "11",
+                "12",
+                "13",
+                "14",
+                "15",
+                "18",
+                "19",
+                "16",
+                "17",
+                "20"
+            ]
+        },
+        "VisitorType": {
+            "type": "category",
+            "candidates": [
+                "Returning_Visitor",
+                "New_Visitor",
+                "Other"
+            ]
+        },
+        "Weekend": {
+            "type": "category",
+            "candidates": [
+                "False",
+                "True"
+            ]
+        },
+        "Revenue": {
+            "type": "category",
+            "candidates": [
+                "False",
+                "True"
+            ]
+        }
+    },
+    "metadata": {
+        "columns": {
+            "0": {
+                "sdtype": "numerical",
+                "computer_representation": "Float"
+            },
+            "1": {
+                "sdtype": "numerical",
+                "computer_representation": "Float"
+            },
+            "2": {
+                "sdtype": "numerical",
+                "computer_representation": "Float"
+            },
+            "3": {
+                "sdtype": "numerical",
+                "computer_representation": "Float"
+            },
+            "4": {
+                "sdtype": "numerical",
+                "computer_representation": "Float"
+            },
+            "5": {
+                "sdtype": "numerical",
+                "computer_representation": "Float"
+            },
+            "6": {
+                "sdtype": "numerical",
+                "computer_representation": "Float"
+            },
+            "7": {
+                "sdtype": "numerical",
+                "computer_representation": "Float"
+            },
+            "8": {
+                "sdtype": "numerical",
+                "computer_representation": "Float"
+            },
+            "9": {
+                "sdtype": "numerical",
+                "computer_representation": "Float"
+            },
+            "10": {
+                "sdtype": "categorical"
+            },
+            "11": {
+                "sdtype": "categorical"
+            },
+            "12": {
+                "sdtype": "categorical"
+            },
+            "13": {
+                "sdtype": "categorical"
+            },
+            "14": {
+                "sdtype": "categorical"
+            },
+            "15": {
+                "sdtype": "categorical"
+            },
+            "16": {
+                "sdtype": "categorical"
+            },
+            "17": {
+                "sdtype": "categorical"
+            }
+        }
+    }
+}
