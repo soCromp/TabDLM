@@ -3,7 +3,7 @@
       
 ### [[Paper](https://arxiv.org/pdf/2602.22586)]
 
-_**[Donghong Cai](https://ilikevegetable.github.io/), [Jiarui Feng](https://jiaruifeng.github.io/), [Yanbo Wang](https://yanxwb.github.io/), [Da Zheng](https://zheng-da.github.io/), [Yixin Chen](https://www.cse.wustl.edu/~yixin.chen/), [Muhan Zhang***](https://muhanzhang.github.io/)**_
+_**[Donghong Cai](https://ilikevegetable.github.io/), [Jiarui Feng](https://jiaruifeng.github.io/), [Yanbo Wang](https://yanxwb.github.io/), [Da Zheng](https://zheng-da.github.io/), [Yixin Chen](https://www.cse.wustl.edu/~yixin.chen/), [Muhan Zhang](https://muhanzhang.github.io/)**_
 
 Washington University in St. Louis, Peking University, Ant Group
 
