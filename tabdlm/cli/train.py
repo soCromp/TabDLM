@@ -95,6 +95,8 @@ def main():
     raw_config = load_config(PROJECT_ROOT / "utils" / "configs.toml")
 
     tokenizer = AutoTokenizer.from_pretrained(args.model_name, trust_remote_code=True)
+    special_tokens_dict = {'additional_special_tokens': [SPECIALS['MASK'], SPECIALS['NUMBER']]}
+    tokenizer.add_special_tokens(special_tokens_dict)
 
     tpl_probs = json.loads(args.template_probs)
     train_ds = TabularDataset(dataset_name=args.dataset_name,
@@ -126,9 +128,9 @@ def main():
 
     collate = PadCollator(tokenizer, pad_to_multiple_of=0 if args.all_numerical else 8)
     train_loader = DataLoader(train_ds, batch_size=args.batch_size, shuffle=True,
-                              num_workers=args.num_workers, collate_fn=collate)
+                              num_workers=0, collate_fn=collate)
     valid_loader = DataLoader(valid_ds, batch_size=args.batch_size, shuffle=False,
-                              num_workers=args.num_workers, collate_fn=collate)
+                              num_workers=0, collate_fn=collate)
 
     if args.grad_accum != args.batch_accum // args.batch_size:
         args.grad_accum = args.batch_accum // args.batch_size
@@ -136,9 +138,8 @@ def main():
     total_steps = math.ceil(len(train_loader) / args.grad_accum) * args.epochs
     print(f"Total steps: {total_steps}")
 
-    mask_token_id, num_token_id = 126336, 126090
-    assert mask_token_id == tokenizer.encode(SPECIALS['MASK'])[0]
-    assert num_token_id == tokenizer.encode(SPECIALS['NUMBER'])[0]
+    mask_token_id = tokenizer.encode(SPECIALS['MASK'], add_special_tokens=False)[0]
+    num_token_id = tokenizer.encode(SPECIALS['NUMBER'], add_special_tokens=False)[0]
 
     floatenc = getfloatenc(hiddim=args.ae_hidden_dim, train=False)
     floatdec = getfloatdec(hiddim=args.ae_hidden_dim, train=False)
@@ -164,6 +165,7 @@ def main():
         all_numerical=args.all_numerical,
         **raw_config["diffusion_params"],
     )
+    model.dlm.resize_token_embeddings(len(tokenizer))
 
     no_decay = ["bias", "LayerNorm.weight"]
     optim_params = [
