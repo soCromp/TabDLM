@@ -1,5 +1,6 @@
-transformers
-peft
+transformers==4.40
+peft=0.10.0
+bitsandbytes
 huggingface_hub
 safetensors
 numpy

@@ -19,7 +19,7 @@ def main():
         meta = loader.get_metadata()
         data = {
             'train': loader.get_train_data(),
-            'val': loader.get_val_data(),
+            'valid': loader.get_val_data(),
             'test': loader.get_test_data(), 
         }
         alldf = loader.get_all_data()
@@ -28,11 +28,11 @@ def main():
         if len(meta['text']) > 0:
             save_dataset_info_wtext(alldf, meta["dataset_name"], meta['type'], 
                                     meta['columns'],meta['nums'], meta['categorical'], 
-                                    meta['text'], meta['target'],
+                                    meta['text'], [meta['target']],
                                     f'data/tabular/{meta["dataset_name"]}')
         else:
             save_dataset_info(alldf, meta["dataset_name"], meta['type'], meta['columns'], 
-                              meta['nums'], meta['categorical'], meta['target'], 
+                              meta['nums'], meta['categorical'], [meta['target']], 
                               f'data/tabular/{meta["dataset_name"]}')
         
 
