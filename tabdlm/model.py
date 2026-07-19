@@ -102,22 +102,25 @@ class TabDLM(nn.Module):
             transformers.modeling_utils.PreTrainedModel.to = _safe_to
         
         ### Diffusion Language Model ###
-        self.dlm = AutoModel.from_pretrained(
+        self.dlm = AutoModelForCausalLM.from_pretrained(
             model_name, trust_remote_code=True,
             torch_dtype=torch.bfloat16 if use_bf16 else torch.float16,
             device_map=custom_device_map, low_cpu_mem_usage=True,
             quantization_config=bnb_config
         )
 
-        # In Llada: MLP module are: ff_proj / up_proj / ff_out (Notice there is a llm head called transformer.ff_out)
-        # Attn Module are: q_proj / k_proj / v_proj / attn_out
-        lora_targets = []
-        for name, mod in self.dlm.named_modules():
-            # only inside transformer.blocks.*，avoid including transformer.ff_out（lm head）
-            if name.startswith("model.transformer.blocks."):
-                last = name.split(".")[-1]
-                if last in lora_parameters:
-                    lora_targets.append(name)
+        if 'llada' in model_name.lower():
+            # In Llada: MLP module are: ff_proj / up_proj / ff_out (Notice there is a llm head called transformer.ff_out)
+            # Attn Module are: q_proj / k_proj / v_proj / attn_out
+            lora_targets = []
+            for name, mod in self.dlm.named_modules():
+                # only inside transformer.blocks.*，avoid including transformer.ff_out（lm head）
+                if name.startswith("model.transformer.blocks."):
+                    last = name.split(".")[-1]
+                    if last in lora_parameters:
+                        lora_targets.append(name)
+        else:  #llama
+            lora_targets = ['q_proj', 'k_proj', 'v_proj', 'o_proj', 'gate_proj', 'down_proj', 'up_proj']
 
         peft_cfg = LoraConfig(
             r=lora_r, lora_alpha=lora_alpha, lora_dropout=lora_dropout,
@@ -159,6 +162,10 @@ class TabDLM(nn.Module):
         return masked_indices, p_mask, t
 
     def forward(self, x):
+        # In tabdlm/model.py, before the RuntimeError
+        num_tokens_found = (x["input_ids"] == self.num_token_id).sum()
+        print(f"DEBUG: Found {num_tokens_found} tokens matching ID {self.num_token_id}")
+        print(f"DEBUG: Input IDs: {x['input_ids']}")
         input_ids = x["input_ids"].to(self.device)  # (b, L)
         prompt_lens = x["prompt_lengths"].to(self.device)  # (b,)
         answer_lens = x["answer_lengths"].to(self.device)  # (b,)

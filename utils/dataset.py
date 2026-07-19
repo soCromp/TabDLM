@@ -76,7 +76,8 @@ class TabularDataset(Dataset):
         self.normalization = normalization
         self.all_numerical = all_numerical
         self.pad_id = tokenizer.pad_token_id # EOS/<|endoftext|> / 126081
-        self.num_token_id = 126090
+        self.num_token_id = tokenizer.encode(SPECIALS['NUMBER'], add_special_tokens=False)[0]
+        print(self.num_token_id)
         self.tpl_keys = list(self.tpl.keys())
         self.tpl_weights = [self.tpl[k] for k in self.tpl_keys]
 
@@ -371,8 +372,17 @@ class TabularDataset(Dataset):
             pad_ids = enc_all["input_ids"] + [self.pad_id] * pad_token_num
         num_values = [row[col] for col in self.numerical_columns]
 
+        print(f"DEBUG: pad_ids type: {type(pad_ids)}")
+        if pad_ids is not None:
+            print(f"DEBUG: pad_ids length: {len(pad_ids)}")
+            print(f"DEBUG: first 5 elements: {pad_ids[:5]}")
+        else:
+            print("DEBUG: pad_ids IS TOTALLY NONE")
+            
+        clean_pad_ids = [int(i) for i in pad_ids if i is not None]
+
         return {
-            "input_ids": torch.tensor(pad_ids, dtype=torch.long),
+            "input_ids": torch.tensor(clean_pad_ids, dtype=torch.long),
             "prompt_len": torch.tensor(prompt_len, dtype=torch.long),
             "answer_len": torch.tensor(ans_len, dtype=torch.long),
             "num_value": torch.tensor(num_values, dtype=torch.float),

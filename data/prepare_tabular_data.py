@@ -14,7 +14,10 @@ def save_tabular_jsonl(data, output_dir, target_col=None):
         save_file = os.path.join(output_dir, f"{split}.jsonl")
         save_csv_file = os.path.join(output_dir, f"{split}.csv")
 
-        df_no_id = df.drop(columns=["id"], inplace=False)
+        if "id" in df.columns:
+            df_no_id = df.drop(columns=["id"], inplace=False)
+        else:
+            df_no_id = df
         df_no_id.to_csv(save_csv_file, index=False)
 
         with open(save_file, "w") as wf:
