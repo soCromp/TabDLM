@@ -5,7 +5,8 @@ import torch
 import torch.nn.functional as F
 from torch.utils.data import DataLoader
 
-from transformers import AutoTokenizer, AutoModel, get_cosine_schedule_with_warmup, AutoModelForCausalLM
+from transformers import AutoTokenizer, AutoModel, get_cosine_schedule_with_warmup
+from transformers import BitsAndBytesConfig
 from peft import LoraConfig, get_peft_model, prepare_model_for_kbit_training, PeftModel
 
 from .diffusion import diffusion_model
@@ -71,11 +72,41 @@ class TabDLM(nn.Module):
         if self.num_numerical_features == 0:
             self.sampler_params['stochastic_sampler'] = False
             self.sampler_params['second_order_correction'] = False
+            
+        dtype = torch.bfloat16 if use_bf16 else torch.float16
+        bnb_config = BitsAndBytesConfig(
+            load_in_4bit=True,
+            bnb_4bit_quant_type="nf4",
+            bnb_4bit_compute_dtype=dtype,
+            bnb_4bit_use_double_quant=True,
+        )
 
+        local_rank = int(os.environ.get("LOCAL_RANK", 0))
+        custom_device_map = {
+            "model": local_rank,
+            "": local_rank  
+        }
+        
+        import transformers
+        if not hasattr(transformers.modeling_utils.PreTrainedModel, "_original_to"):
+            transformers.modeling_utils.PreTrainedModel._original_to = transformers.modeling_utils.PreTrainedModel.to
+            
+            def _safe_to(self, *args, **kwargs):
+                try:
+                    return self._original_to(*args, **kwargs)
+                except ValueError as e:
+                    if "4-bit" in str(e) or "8-bit" in str(e):
+                        # The model is already correctly placed; safely ignore the redundant move
+                        return self
+                    raise e
+            transformers.modeling_utils.PreTrainedModel.to = _safe_to
+        
         ### Diffusion Language Model ###
         self.dlm = AutoModelForCausalLM.from_pretrained(
             model_name, trust_remote_code=True,
-            torch_dtype=torch.bfloat16 if use_bf16 else torch.float16
+            torch_dtype=torch.bfloat16 if use_bf16 else torch.float16,
+            device_map=custom_device_map, low_cpu_mem_usage=True,
+            quantization_config=bnb_config
         )
 
         if 'llada' in model_name.lower():
@@ -96,7 +127,7 @@ class TabDLM(nn.Module):
             bias="none", task_type="CAUSAL_LM",
             target_modules=lora_targets
         )
-        self.dlm = prepare_model_for_kbit_training(self.dlm)
+        self.dlm = prepare_model_for_kbit_training(self.dlm, use_gradient_checkpointing=False)
         self.dlm = get_peft_model(self.dlm, peft_cfg)
         self.dlm.print_trainable_parameters()
         self.tok_embed = self.dlm.get_input_embeddings()
@@ -236,6 +267,7 @@ class TabDLM(nn.Module):
         torch.save(self.diffusion_model.state_dict(), os.path.join(save_dir, f"{description}", "diffusion_model.pt"))
 
     def load_model(self, save_dir, description):
+        import os
         ckpt_dir = os.path.join(save_dir, f"{description}")
         diff_path = os.path.join(ckpt_dir, "diffusion_model.pt")
 
@@ -244,20 +276,61 @@ class TabDLM(nn.Module):
         if not os.path.exists(diff_path):
             raise FileNotFoundError(f"Diffusion checkpoint not found: {diff_path}")
 
-        dtype = torch.bfloat16 if self.use_bf16 else torch.float16
+        dtype = torch.bfloat16 if getattr(self, "use_bf16", False) else torch.float16
+        
+        # 1. Match the 4-bit quantization config from training
+        from transformers import BitsAndBytesConfig
+        bnb_config = BitsAndBytesConfig(
+            load_in_4bit=True,
+            bnb_4bit_quant_type="nf4",
+            bnb_4bit_compute_dtype=dtype,
+            bnb_4bit_use_double_quant=True,
+        )
+
+        # 2. Match the custom device map to prevent loading issues
+        import os
+        local_rank = int(os.environ.get("LOCAL_RANK", 0))
+        custom_device_map = {
+            "model": local_rank,
+            "": local_rank  
+        }
+
+        # 3. Apply the .to() monkeypatch to prevent accelerate from crashing during PEFT load
+        import transformers
+        if not hasattr(transformers.modeling_utils.PreTrainedModel, "_original_to"):
+            transformers.modeling_utils.PreTrainedModel._original_to = transformers.modeling_utils.PreTrainedModel.to
+            
+            def _safe_to(self, *args, **kwargs):
+                try:
+                    return self._original_to(*args, **kwargs)
+                except ValueError as e:
+                    if "4-bit" in str(e) or "8-bit" in str(e):
+                        return self
+                    raise e
+            transformers.modeling_utils.PreTrainedModel.to = _safe_to
+
+        # 4. Load the base model in 4-bit
         base_model = AutoModel.from_pretrained(
             self.model_name,
             trust_remote_code=True,
             torch_dtype=dtype,
+            device_map=custom_device_map,
+            low_cpu_mem_usage=True,
+            quantization_config=bnb_config
         )
 
-        base_model = prepare_model_for_kbit_training(base_model)
+        # 5. Disable gradient checkpointing here just like in init
+        base_model = prepare_model_for_kbit_training(base_model, use_gradient_checkpointing=False)
+        
+        # 6. Load the trained LoRA adapters
         self.dlm = PeftModel.from_pretrained(
             base_model,
             ckpt_dir,
+            is_trainable=False # Explicitly flag for inference
         )
         self.tok_embed = self.dlm.get_input_embeddings()
 
+        # Load diffusion weights
         state_dict = torch.load(diff_path, map_location="cpu")
         self.diffusion_model.load_state_dict(state_dict, strict=True)
 

@@ -1,6 +1,11 @@
 # TabDLM: Free-Form Tabular Data Generation via Joint Numerical–Language Diffusion
 <div align="center">
       
+
+TOKENIZERS_PARALLELISM=false PYTHONPATH=. python main.py train --dataset_name stroke --description "_tabdlm"     --epochs 10 --batch_size 32 --batch_accum 32    --loss_type no_divide_pmask  --lora_r 16 --lora_alpha 64 --bf16
+
+TOKENIZERS_PARALLELISM=false PYTHONPATH=. python main.py sample --dataset_name stroke --description "_tabdlm"              --save_description "_tabdlm_synth" --do_sampling --use_best_ckp --temperature 1.0              --sample_batch_size 32 --seed 1 --proportion 10
+
 ### [[Paper](https://arxiv.org/pdf/2602.22586)]
 
 _**[Donghong Cai](https://ilikevegetable.github.io/), [Jiarui Feng](https://jiaruifeng.github.io/), [Yanbo Wang](https://yanxwb.github.io/), [Da Zheng](https://zheng-da.github.io/), [Yixin Chen](https://www.cse.wustl.edu/~yixin.chen/), [Muhan Zhang](https://muhanzhang.github.io/)**_
