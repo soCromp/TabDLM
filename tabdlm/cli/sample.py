@@ -228,7 +228,11 @@ def main():
     print(f"Start sampling/loading, total samples to generate = {num_samples_left}")
     start_time = time.time()
 
-    while num_samples_left > 0:
+    attempts = 0
+    max_attempts = 5 # Safety valve to prevent infinite loops
+
+    while num_samples_left > 0 and attempts < max_attempts:
+        attempts += 1
         if args.do_sampling:
             with torch.no_grad():
                 model.sample_synthetic_all(
@@ -252,9 +256,11 @@ def main():
                 )
 
         df = _load_raw_samples(args, train_ds)
-        # print(f"After filtering, synthetic counts from {num_samples_init} -> {len(df)}.")
+        if attempts > 1:
+            print(f"\n--- DEBUG ATTEMPT {attempts} ---")
+        
         df.dropna(inplace=True)
-        # print(f"After dropping nan, synthetic counts from {num_samples_init} -> {len(df)}.")
+        # print(f"Samples remaining after dropping NaNs: {len(df)}")
 
         df = postprocess_loaded_samples(
             df,
@@ -262,35 +268,33 @@ def main():
             all_numerical=args.all_numerical,
             dataset_name=args.dataset_name,
         )
-        # print(f"After doing strip, synthetic counts from {num_samples_init} -> {len(df)}.")
+        # print(f"Samples remaining after text post-processing: {len(df)}")
 
         info = build_filter_column_info(
             train_ds,
             all_numerical=args.all_numerical,
             dataset_name=args.dataset_name,
         )
-        
         # force categorical columns to be strings
         for col, col_info in info.items():
             if col_info.get("type") == "category":
                 df[col] = df[col].astype(str)
-        
-        # # DEBUG
-        # print("\n--- COLUMN ALIGNMENT CHECK ---")
-        # print(df.head(2)) 
-        # print("\n--- EXPECTED CATEGORIES (INFO) ---")
-        # print(info)
-        # print("------------------------------\n")
-        
         df = filter_not_in_candidates(df, args.dataset_name, info, num_samples_init)
         # print(f"Samples remaining after checking for invalid categories: {len(df)}")
 
+        if num_samples_targ - len(df) < num_samples_left:
+            attempts = 0 # reset if we made progress
+            
         num_samples_left = num_samples_targ - len(df)
         if num_samples_left > 0:
             print(f"still have {num_samples_left} samples to generate.")
         else:
             df = df[:num_samples_targ]
             print(f"Use the first {num_samples_targ} samples for evaluation.")
+
+    if num_samples_left > 0:
+        print(f"\n[WARNING] Hit max attempts ({max_attempts}). Proceeding with {len(df)} valid samples instead of {num_samples_targ}.")
+        
 
     df = finalize_numerical_columns(df, args.dataset_name, train_ds.numerical_columns)
 

@@ -371,13 +371,6 @@ class TabularDataset(Dataset):
             ans_len = max(self.answer_len, len(enc_all["input_ids"]) - prompt_len)
             pad_ids = enc_all["input_ids"] + [self.pad_id] * pad_token_num
         num_values = [row[col] for col in self.numerical_columns]
-
-        print(f"DEBUG: pad_ids type: {type(pad_ids)}")
-        if pad_ids is not None:
-            print(f"DEBUG: pad_ids length: {len(pad_ids)}")
-            print(f"DEBUG: first 5 elements: {pad_ids[:5]}")
-        else:
-            print("DEBUG: pad_ids IS TOTALLY NONE")
             
         clean_pad_ids = [int(i) for i in pad_ids if i is not None]
 

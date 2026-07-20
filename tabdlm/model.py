@@ -163,9 +163,6 @@ class TabDLM(nn.Module):
 
     def forward(self, x):
         # In tabdlm/model.py, before the RuntimeError
-        num_tokens_found = (x["input_ids"] == self.num_token_id).sum()
-        print(f"DEBUG: Found {num_tokens_found} tokens matching ID {self.num_token_id}")
-        print(f"DEBUG: Input IDs: {x['input_ids']}")
         input_ids = x["input_ids"].to(self.device)  # (b, L)
         prompt_lens = x["prompt_lengths"].to(self.device)  # (b,)
         answer_lens = x["answer_lengths"].to(self.device)  # (b,)
