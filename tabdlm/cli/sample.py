@@ -62,8 +62,11 @@ def get_args():
     parser.add_argument("--gen_length", type=int, default=64)
     parser.add_argument("--block_length", type=int, default=64)
     parser.add_argument("--temperature", type=float, default=1.0)
-    parser.add_argument("--proportion", type=int, default=1,
-                        help="proportion of generated samples")
+    
+    # Replaced proportion with n
+    parser.add_argument("--n", type=int, default=1000,
+                        help="exact number of samples to generate")
+                        
     parser.add_argument("--remasking", type=str, default="random",
                         choices=["low_confidence", "random"])
     parser.add_argument("--save_description", type=str, default="")
@@ -216,10 +219,10 @@ def main():
     else:
         model = None
 
-    num_samples_init = num_samples_targ = int(
-        (len(train_ds.df) + args.proportion - 0.01) // args.proportion
-    )
+    # Replaced proportional logic with direct n assignment
+    num_samples_init = num_samples_targ = args.n
     num_samples_left = num_samples_init
+    
     prompt, num_value_idx = train_ds.build_sample_prompt(template=args.sample_prompt_template)
     prompt_ids = torch.tensor(tokenizer(prompt)["input_ids"]).to(device)
     print(f"Start sampling/loading, total samples to generate = {num_samples_left}")
@@ -266,7 +269,21 @@ def main():
             all_numerical=args.all_numerical,
             dataset_name=args.dataset_name,
         )
+        
+        # force categorical columns to be strings
+        for col, col_info in info.items():
+            if col_info.get("type") == "category":
+                df[col] = df[col].astype(str)
+        
+        # # DEBUG
+        # print("\n--- COLUMN ALIGNMENT CHECK ---")
+        # print(df.head(2)) 
+        # print("\n--- EXPECTED CATEGORIES (INFO) ---")
+        # print(info)
+        # print("------------------------------\n")
+        
         df = filter_not_in_candidates(df, args.dataset_name, info, num_samples_init)
+        # print(f"Samples remaining after checking for invalid categories: {len(df)}")
 
         num_samples_left = num_samples_targ - len(df)
         if num_samples_left > 0:
@@ -291,44 +308,8 @@ def main():
     end_time = time.time()
     print(f"End sampling/loading, total sampling time = {end_time - start_time:.2f}s")
 
-    print("\nStart evaluation.")
-    real_data_path = f"data/synthetic/{args.dataset_name}/real.csv"
-    test_data_path = f"data/synthetic/{args.dataset_name}/test.csv"
-    val_data_path = f"data/synthetic/{args.dataset_name}/val.csv"
-    info_path = f"data/synthetic/{args.dataset_name}/info.json"
-    with open(info_path, "r") as f:
-        info = json.load(f)
-    if not os.path.exists(val_data_path):
-        print(
-            f"{args.dataset_name} does not have its validation set. During MLE evaluation, "
-            "a validation set will be splitted from the training set!"
-        )
-        val_data_path = None
-
-    metrics = TabMetrics(
-        real_data_path, test_data_path, val_data_path, info, device,
-        metric_list=args.eval_metrics,
-    )
-    res = metrics.evaluate(df)
-
-    pd.set_option("display.max_rows", None)
-    pd.set_option("display.max_columns", None)
-    print(res[0])
-    # for key, value in res[1].items():
-    #     print(f"{key}:")
-    #     print(value)
-
-    metrics_dict, extras_dict = res
-    wandb_payload = {}
-    wandb_payload.update(_flatten_numeric_metrics(metrics_dict, prefix="eval"))
-    wandb_payload.update(_flatten_numeric_metrics(extras_dict, prefix="eval_extra"))
-    wandb_payload["eval/num_synthetic_samples"] = float(len(df))
-    wandb_payload["eval/num_requested_samples"] = float(num_samples_targ)
-
-    if len(wandb_payload) == 0:
-        print("No numeric metrics parsed from evaluation results for wandb logging.")
-    else:
-        wandb.log(wandb_payload)
-        print(f"Logged {len(wandb_payload)} parsed evaluation metrics to wandb.")
-
     wandb.finish()
+
+if __name__ == "__main__":
+    main()
+    

@@ -102,7 +102,7 @@ class TabDLM(nn.Module):
             transformers.modeling_utils.PreTrainedModel.to = _safe_to
         
         ### Diffusion Language Model ###
-        self.dlm = AutoModelForCausalLM.from_pretrained(
+        self.dlm = AutoModel.from_pretrained(
             model_name, trust_remote_code=True,
             torch_dtype=torch.bfloat16 if use_bf16 else torch.float16,
             device_map=custom_device_map, low_cpu_mem_usage=True,
