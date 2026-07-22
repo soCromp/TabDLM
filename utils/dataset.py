@@ -90,7 +90,7 @@ class TabularDataset(Dataset):
             self.stas_info['column_info']['class']['type'] = 'float'
 
         target_col = self.stas_info['column_names'][self.stas_info['target_col_idx'][0]]
-        if self.stas_info['column_info'][target_col]['type'] == 'float':
+        if self.stas_info['column_info'][target_col]['type'] == 'float' and target_col not in self.numerical_columns:
             self.numerical_columns.append(target_col)
 
         self.nonNumerical_columns = [col_name for col_name in self.stas_info['column_names'] if col_name not in self.numerical_columns]
@@ -199,21 +199,65 @@ class TabularDataset(Dataset):
                 self.df[col] = x_transformed
 
     def denormalize(self, df):
+        import numpy as np
+        import pandas as pd
+
         if self.normalization == "standard":
             for col in self.numerical_columns:
-                x = pd.to_numeric(df[col], errors="coerce")
+                if col not in df.columns:
+                    continue
+                
+                val = df[col]
+                # 1. Extract raw underlying data
+                if isinstance(val, pd.DataFrame):
+                    val = val.iloc[:, 0].values
+                elif hasattr(val, "detach"):
+                    val = val.detach().cpu().numpy()
+                elif hasattr(val, "values"):
+                    val = val.values
+
+                # 2. Force val to be a 1D NumPy array
+                val = np.asarray(val).squeeze()
+                if val.ndim == 0:
+                    val = np.atleast_1d(val)
+                elif val.ndim > 1:
+                    val = val[:, 0]  # Take the first slice if 2D/multi-col
+
+                # 3. Convert and scale
+                x = pd.to_numeric(val, errors="coerce")
                 mu = float(self.stas_info['column_info'][col]["mean"])
                 sd = float(self.stas_info['column_info'][col]["std"])
                 df[col] = x * sd + mu
+
         elif self.normalization == "quantile":
             for col in self.numerical_columns:
                 if col not in df.columns:
                     continue
-                x = pd.to_numeric(df[col], errors="coerce")
+                
+                val = df[col]
+                # 1. Extract raw underlying data
+                if isinstance(val, pd.DataFrame):
+                    val = val.iloc[:, 0].values
+                elif hasattr(val, "detach"):
+                    val = val.detach().cpu().numpy()
+                elif hasattr(val, "values"):
+                    val = val.values
+
+                # 2. Force val to be a 1D NumPy array
+                val = np.asarray(val).squeeze()
+                if val.ndim == 0:
+                    val = np.atleast_1d(val)
+                elif val.ndim > 1:
+                    val = val[:, 0]  # Take the first slice if 2D/multi-col
+
+                # 3. Convert and inverse transform
+                x = pd.to_numeric(val, errors="coerce")
                 transformer = self.quantile_transformers.get(col)
                 if transformer is None:
                     continue
-                x_denormalized = transformer.inverse_transform(x.values.reshape(-1, 1)).flatten()
+
+                x_2d = np.asarray(x).reshape(-1, 1)
+                x_denormalized = transformer.inverse_transform(x_2d).flatten()
                 df[col] = x_denormalized
 
         return df

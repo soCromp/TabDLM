@@ -102,6 +102,7 @@ def _load_raw_samples(args, train_ds):
         "result", args.dataset_name, "raw_sampling_result",
         f"{args.description}{args.save_description}.txt",
     )
+    print(train_ds.col_order)
     return pd.read_csv(
         raw_path,
         sep="|",
@@ -170,6 +171,7 @@ def main():
         split="train",
         all_numerical=args.all_numerical,
     )
+    print(train_ds)
 
     if args.do_sampling:
         mask_token_id, num_token_id = 126336, 126090
@@ -202,9 +204,9 @@ def main():
             **raw_config["diffusion_params"],
         )
         if args.use_best_ckp:
-            model.load_model(args.save_dir, f"{args.description}_best")
+            model.load_model(args.save_dir, f"{args.description}_best", resize=len(tokenizer))
         else:
-            model.load_model(args.save_dir, f"{args.description}_last")
+            model.load_model(args.save_dir, f"{args.description}_last", resize=len(tokenizer))
 
         model.to(device)
         model.eval()

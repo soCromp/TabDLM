@@ -263,7 +263,7 @@ class TabDLM(nn.Module):
         self.dlm.save_pretrained(os.path.join(save_dir, f"{description}"))
         torch.save(self.diffusion_model.state_dict(), os.path.join(save_dir, f"{description}", "diffusion_model.pt"))
 
-    def load_model(self, save_dir, description):
+    def load_model(self, save_dir, description, resize=None):
         import os
         ckpt_dir = os.path.join(save_dir, f"{description}")
         diff_path = os.path.join(ckpt_dir, "diffusion_model.pt")
@@ -315,6 +315,9 @@ class TabDLM(nn.Module):
             low_cpu_mem_usage=True,
             quantization_config=bnb_config
         )
+        
+        if resize is not None:
+            base_model.resize_token_embeddings(resize)
 
         # 5. Disable gradient checkpointing here just like in init
         base_model = prepare_model_for_kbit_training(base_model, use_gradient_checkpointing=False)

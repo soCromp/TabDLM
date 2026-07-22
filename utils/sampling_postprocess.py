@@ -62,6 +62,11 @@ def filter_not_in_candidates(
     for col, meta in info.items():
         if meta["type"] == "category":
             valid_vals = set(meta["candidates"])
+            if isinstance(meta["candidates"][0], str):
+                try:
+                    df_filtered[col] = df_filtered[col].astype(float).round().astype(int).astype(str)
+                except Exception:
+                    pass
             df_filtered = df_filtered[df_filtered[col].isin(valid_vals)]
     # print(
     #     f"After dropping row not in candidate, synthetic counts from "
